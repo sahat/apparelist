@@ -1,0 +1,129 @@
+html,
+body {
+  height: 100%;
+/* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  background: url(../images/bgnoise.png);
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+/* Negative indent footer by it's height */
+  margin: 0 auto -40px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 40px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  }
+
+.container .credit {
+  margin: 10px 0;
+}
+
+code {
+  font-size: 80%;
+}
+
+
+.sidebar-nav .active  a {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+
+.nav >  li >  a {
+  display: block;
+  padding: 8px 14px !important;
+}
+
+.color {
+  padding: 1px;
+}
+.colors img {
+  padding-right: 1px;
+}
+
+.box {
+  padding: 5px;
+  background: #ffffff;
+  box-shadow: 1px 1px 6px #b0aaa5;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 25px;
+}
+
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  color: #fff;
+  background: #4D90FE;
+}
+
+.store-logo {
+  max-height: 20px;
+}
+
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Isotope Transitions
+------------------------------- */
+.isotope,
+.isotope .item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property:    -moz-transform, opacity;
+  -ms-transition-property:     -ms-transform, opacity;
+  -o-transition-property:         top, left, opacity;
+  transition-property:         transform, opacity;
+}
+
+/* JavaScript event trig­gered by media query rules
+   @see: http://www.paulrhayes.com/2011-11/use-css-transitions-to-link-media-queries-and-javascript/
+------------------------------- */
+.mq {
+  -webkit-transition: width 0.001ms;
+  -moz-transition: width 0.001ms;
+  -o-transition: width 0.001ms;
+  transition: width 0.001ms;
+  width: 0;
+}

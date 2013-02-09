@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  .pagination-centered
+    .btn-group
+      a.btn.btn-info.dropdown-toggle(data-toggle='dropdown', href='#')
+        i.icon-filter
+        |  Sort By &nbsp;
+        span.caret
+      ul.dropdown-menu
+        li
+          a#ascending(href='') Price: Low to High
+        li
+          a#descending(href='') Price: High to Low
+        li
+          a(href='#') New Arrivals
+        li
+          a(href='#') Best Sellers
+  hr
+  for item in items
+    for color in item.colors
+      if color.imageUrl.length > 2
+        img.color(src='#{color.imageUrl}')
+  hr
+  #content
+    for item in items
+      .box
+        img.store-logo(src='#{item.store.logo}')
+        br
+        a(href='#{item.url}')
+          img(src='#{item.image}', id='image-#{item.id}')
+        .caption
+          .colors
+            for color in item.colors
+              img(src='#{color.imageUrl}', title='#{color.name}', width='15px')
+
+          h6 #{item.price}
+          button.btn.btn-block.btn-primary(id='item-#{item.id}')
+            i.icon-shopping-cart
+            |  Add To Bag
+      script(type='text/javascript')
+        $('#item-#{item.id}').toggle(function() {
+          $.ajax({
+            type: 'post',
+            url: '/bag',
+            data: '#{item}',
+            success: function() {
+              $('#bagcount').text(parseInt($('#bagcount').text()) + 1);
+            }
+          });
+          toastr.success('An item has been added to your bag.');
+          $(this).removeClass('btn-primary').addClass('btn-danger').html('<i class="icon-trash"></i> Remove');
+        }, function() {
+          $.ajax({
+            type: 'post',
+            url: '/bag',
+            data: '#{item}',
+            success: function() {
+              $('#bagcount').text(parseInt($('#bagcount').text()) - 1);
+            }
+          });
+          toastr.error('An item has been removed from your bag.');
+          $(this).removeClass('btn-danger').addClass('btn-primary').html('<i class="icon-shopping-cart"></i> Add to Bag');
+        });

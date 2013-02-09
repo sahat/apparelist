@@ -1,0 +1,97 @@
+doctype 5
+html(lang='en')
+head
+  meta(charset='utf-8')
+  title Fashion Hack 2013
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(name='description', content='Heart Fashion Hackathon 2013')
+  meta(name='author', content='Sahat Yalkabov')
+  //if lt IE 9
+    script(src='/javascripts/vendor/html5shiv.js')
+    script(src='/javascripts/vendor/respond.min.js')
+  link(href='/stylesheets/bootstrap.css', rel='stylesheet')
+  link(href='/stylesheets/bootstrap-responsive.css', rel='stylesheet')
+  link(href='/stylesheets/font-awesome.min.css', rel='stylesheet')
+  link(href='/stylesheets/google-bootstrap.css', rel='stylesheet')
+  link(href='/stylesheets/toastr.css', rel='stylesheet')
+  link(href='/stylesheets/style.css', rel='stylesheet')
+  script(src='/javascripts/vendor/jquery.js')
+  body
+    #wrap
+      .navbar.navbar-googlebar
+        .navbar-inner
+          a.brand(href='/') Multishopper
+          form.navbar-form.pull-left(action='/search')
+            input.input-large(type='text', placeholder='Search')
+            |&nbsp;
+            button.btn.btn-primary(type='submit')
+              i.icon-search
+          ul.nav.pull-left
+            li
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.icon-shopping-cart
+                |  Stores
+                i.icon-angle-down
+                ul.dropdown-menu.stores
+                  li.store
+                    a(href='#') Express
+                  li.store
+                    a(href='#') H&M
+                  li.store
+                    a(href='#') GAP
+                  li.store
+                    a(href='#') ALDO
+                  li.store
+                    a(href='#') UNIQLO
+                  li.store
+                    a(href='#') Armani Exchange
+                  li.store
+                    a(href='#') Zara
+                  li.store
+                    a(href='#') A&F
+                  li.store
+                    a(href='#') Macys
+          ul.nav.pull-right
+            li
+              a#bag.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.icon-briefcase
+                |&nbsp;
+                span#bagcount 0
+                |  item(s)
+                i.icon-angle-down
+                ul.dropdown-menu
+                  li
+                    a(href='#')
+                      i.icon-shopping-cart
+                      | View my bag
+                  li
+                    a#clearbag(href='#')
+                      i.icon-trash
+                      | Clear all items
+                  li.divider
+                  li
+                    a(href='#')
+                      i.icon-download-alt
+                      | Save to PDF
+                  li
+                    a(href='#')
+                      i.icon-print
+                      | Print
+      .container
+        block content
+      #push
+      #push
+    #footer
+      .container
+        p.muted.credit
+          | 2013 &copy;
+          a(href='http://sahat.me')  Sahat Yalkabov.
+          |  Powered by Node.js, MongoDB, (API).
+    script(src='/javascripts/vendor/bootstrap.min.js')
+    script(src='/javascripts/vendor/underscore-min.js')
+    script(src='/javascripts/vendor/toastr.js')
+    script(src='/javascripts/vendor/holder.js')
+    script(src='/javascripts/vendor/jquery.masonry.min.js')
+    script(src='/javascripts/vendor/purl.js')
+    script(src='/javascripts/client.js')
+
