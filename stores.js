@@ -5,7 +5,7 @@ exports.express = {
     shirts_and_ties: 'http://www.express.com/shirts-ties-49/control/show/80/index.cat',
     t_shirts: '',
     polos: '',
-    sweatshirts: '',
+    sweatshirts: 'http://www.express.com/hoodies-sweatshirts-836/control/show/80/index.cat',
     blazers: 'http://www.express.com/blazers-vests-1181/control/show/80/index.cat',
     jackets: 'http://www.express.com/jackets-692/control/show/80/index.cat',
     sweaters: 'http://www.express.com/sweaters-60/control/show/80/index.cat',
