@@ -23,7 +23,7 @@ exports.express = {
   },
   women: {
     dresses: 'http://www.express.com/dresses-22/control/show/12/index.cat',
-    tops: '',
+    tops: 'http://www.express.com/tops-tees-9/control/show/80/index.cat',
     t_shirts: '',
     sweaters: '',
     jackets: '',
