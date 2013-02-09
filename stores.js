@@ -12,7 +12,7 @@ exports.express = {
     coats: 'http://www.express.com/coats-outerwear-97/control/show/80/index.cat',
     shorts: 'http://www.express.com/shorts-swim-612/control/show/80/index.cat',
     jeans: 'http://www.express.com/jeans-62/control/show/80/index.cat',
-    underwear: '',
+    underwear: 'http://www.express.com/underwear-79/control/show/80/index.cat',
     swimwear: '',
     shoes: '',
     socks: '',
