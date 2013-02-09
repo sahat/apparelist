@@ -22,7 +22,7 @@ exports.express = {
     sunglasses: 'http://www.express.com/sunglasses-583/control/show/80/index.cat'
   },
   women: {
-    dresses: '',
+    dresses: 'http://www.express.com/dresses-22/control/show/12/index.cat',
     tops: '',
     t_shirts: '',
     sweaters: '',
