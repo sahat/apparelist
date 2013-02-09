@@ -3,7 +3,7 @@ exports.express = {
   name: 'Express',
   men: {
     shirts_and_ties: 'http://www.express.com/shirts-ties-49/control/show/80/index.cat',
-    t_shirts: '',
+    t_shirts: 'http://www.express.com/tees-henleys-844/control/show/80/index.cat',
     polos: 'http://www.express.com/polos-690/control/show/80/index.cat',
     sweatshirts: 'http://www.express.com/hoodies-sweatshirts-836/control/show/80/index.cat',
     blazers: 'http://www.express.com/blazers-vests-1181/control/show/80/index.cat',
