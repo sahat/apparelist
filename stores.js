@@ -25,7 +25,7 @@ exports.express = {
     dresses: 'http://www.express.com/dresses-22/control/show/12/index.cat',
     tops: 'http://www.express.com/tops-tees-9/control/show/80/index.cat',
     t_shirts: 'http://www.express.com/shirts-blouses-721/control/show/80/index.cat',
-    sweaters: '',
+    sweaters: 'http://www.express.com/sweaters-20/control/show/80/index.cat',
     jackets: '',
     coats: '',
     leggings: '',
