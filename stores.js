@@ -8,7 +8,7 @@ exports.express = {
     sweatshirts: '',
     blazers: 'http://www.express.com/blazers-vests-1181/control/show/80/index.cat',
     jackets: 'http://www.express.com/jackets-692/control/show/80/index.cat',
-    sweaters: '',
+    sweaters: 'http://www.express.com/sweaters-60/control/show/80/index.cat',
     coats: 'http://www.express.com/coats-outerwear-97/control/show/80/index.cat',
     shorts: '',
     jeans: '',
