@@ -15,7 +15,7 @@ exports.express = {
     underwear: 'http://www.express.com/underwear-79/control/show/80/index.cat',
     swimwear: 'http://www.express.com/shorts-swim-612/control/show/80/index.cat',
     shoes: 'http://www.express.com/shoes-boots-794/control/show/80/index.cat',
-    socks: '',
+    socks: 'http://www.express.com/socks-89/control/show/80/index.cat',
     watches: '',
     belts: '',
     hats: '',
