@@ -353,11 +353,153 @@ app.get('/search', function(req, res) {
     },
     function handm(callback) {
       if (_.contains(store_array, 'handm')) {
-        callback(null, items);
+        var searchUrl;
+
+        if (search_query.match(/shirt/i)){
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294956433";
+        }
+        else if (search_query.match(/tie/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294956433";
+        }
+        else if (search_query.match(/polo/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294927206";
+        }
+        else if (search_query.match(/sweatshirt/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294924882";
+        }
+        else if (search_query.match(/blazer/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294924830";
+        }
+        else if (search_query.match(/jacket/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294924830";
+        }
+        else if (search_query.match(/sweater/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294927521";
+        }
+        else if (search_query.match(/coat/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294927833";
+        }
+        else if (search_query.match(/shorts/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294952162";
+        }
+        else if (search_query.match(/jeans/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294956231";
+        }
+        else if (search_query.match(/pants/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294956231";
+        }
+        else if (search_query.match(/underwear/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294923978";
+        }
+        else if (search_query.match(/bathingsuit/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294952307";
+        }
+        else if (search_query.match(/shoes/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294957721";
+        }
+        else if (search_query.match(/socks/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294958404";
+        }
+        else if (search_query.match(/watch/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294926526";
+        }
+        else if (search_query.match(/belt/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294927569";
+        }
+        else if (search_query.match(/hat/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294923718";
+        }
+        else if (search_query.match(/sunglasses/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/MEN?Nr=4294919597";
+        }
+        else if (search_query.match(/dress/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/LADIES?Nr=4294960648";
+        }
+        else if (search_query.match(/top/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943";
+        }
+        else if (search_query.match(/leggings/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/LADIES?Nr=4294960522";
+        }
+        else if (search_query.match(/skirt/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/LADIES?Nr=4294962650";
+        }
+        else if (search_query.match(/handbag/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/LADIES?Nr=4294926110";
+        }
+        else if (search_query.match(/lingerie/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/LADIES?Nr=4294929212";
+        }
+        else if (search_query.match(/swimwear/i)) {
+          searchUrl = "http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943";
+        }
+
+        jsdom.env({
+          html: searchUrl,
+          scripts: ['http://code.jquery.com/jquery.js'],
+          done: function (errors, window) {
+            var $ = window.$;
+            var items = [];
+            $('#list-products > li').each(function(index, productElement) {
+              console.log(index);
+              if (index > 1) {
+                console.log(index, 'inside if');
+                var product = {
+                  id: 'handm_' + index,
+                  url: $('span.details', productElement).parent().attr('href'),
+                  name: $('span.details', productElement).text().trim().replace(/\s{2,}/g, ' '),
+                  price: $('span.price', productElement).text().trim(),
+                  image: $('div.image img:nth-child(2)', productElement).attr('src'),
+                  colors: [],
+                  store: { logo: stores.handm.logo, name: stores.handm.name }
+                };
+                $('.colours li', productElement).each(function(index, colorElement) {
+                  product.colors.push({ name: '', imageUrl: $(colorElement).css('background-image').slice(0,-1).slice(4).slice(0,-6)+']' });
+                });
+                items.push(product);
+              }
+            });
+            callback(null, items);
+          }
+        });
       } else {
         callback(null, []);
       }
+    },
+    function uniqlo(callback) {
+      if (_.contains(store_array, 'uniqlo')) {
+        jsdom.env({
+          html: 'http://www.uniqlo.com/us/mens-clothing/mens-tops/mens-sweatshirts-and-fleece',
+          scripts: ["http://code.jquery.com/jquery.js"],
+          done: function (errors, window) {
+            var $ = window.$;
+            var items = [];
 
+            console.log('i am in uniqlo ')
+
+            $('.productWrapper').each(function(index, productElement) {
+              console.log('inside loop');
+
+              var product = {
+                id: 'uniqlo' + index,
+                url: 'http://www.uniqlo.com' + $('.titleWrapper a', productElement).attr('href'),
+                name: $('.titleWrapper a span', productElement).text(),
+                price: $('.price', productElement).text().trim(),
+                image: $('.productIMG a img', productElement).attr('src'),
+                colors: [],
+                store: { logo: stores.uniqlo.logo, name: stores.uniqlo.name }
+              };
+
+              console.log()
+              console.log(product);
+              items.push(product);
+            });
+            callback(null, items);
+          }
+        });
+      } else {
+        callback(null, []);
+      }
     }
   ],
     function(err, results) {
