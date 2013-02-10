@@ -321,52 +321,110 @@ app.get('/results', function(req, res) {
   });
 });
 
-app.post('/search', function(req, res) {
-  //async all stores
-  /*
-  pass search query to each store's search
-  webscrape those results similar to categories scraping
-  return those results
-   */
+app.get('/search', function(req, res) {
+  if (!req.session.bag) {
+    req.session.bag = [];
+  }
+  var store_array = req.query.stores;
+  var sortPrice = req.query.price;
+
+  var search_query = req.query.q;
+  console.log(search_query);
+
+  if (typeof store_array === 'string') {
+    var temp = store_array;
+    var store_array = [];
+    store_array.push(temp);
+  }
+
   async.parallel([
     function express(callback) {
-      callback(null, items);
+      if (_.contains(store_array, 'express')) {
+        console.log('found express');
+        var search_url = 'http://www.express.com/catalog/search.cmd?form_state=searchForm&x=0&y=0&keyword=' + search_query;
+        jsdom.env({
+          html: search_url,
+          scripts: ["http://code.jquery.com/jquery.js"],
+          done: function (errors, window) {
+            var $ = window.$;
+            var items = [];
+
+            $('div.cat-luc-result-item').each(function(index, productElement) {
+              console.log('inside loop');
+
+
+              var product = {
+                id: 'express_' + index,
+                url: 'http://www.express.com' + $('div.cat-luc-result-item ul li:nth-child(3)', productElement).attr('href'),
+                name: $('div.cat-luc-result-item ul li:nth-child(3)', productElement).text().trim(),
+                price: $('ul li strong', productElement).text(),
+                image: $('.cat-luc-product-ima', productElement).attr('src'),
+                colors: [],
+                store: { logo: stores.express.logo, name: stores.express.name }
+              };
+
+              $('.cat-cat-more-colors div img', productElement).each(function(index, colorElement) {
+                product.colors.push({name: $(colorElement).attr('alt'), imageUrl: $(colorElement).attr('src')});
+              });
+
+              items.push(product);
+            });
+            callback(null, items);
+          }
+        });
+      } else {
+        callback(null, []);
+      }
     },
     function handm(callback) {
-      callback(null, items);
-    },
-    function gap(callback) {
-      callback(null, items);
-    },
-    function aldo(callback) {
-      callback(null, items);
-    },
-    function uniqlo(callback) {
-      callback(null, items);
-    },
-    function armani_exchange(callback) {
-      callback(null, items);
-    },
-    function zara(callback) {
-      callback(null, items);
-    },
-    function andf(callback) {
-      callback(null, items);
-    },
-    function macys(callback) {
-      callback(null, items);
+      if (_.contains(store_array, 'handm')) {
+        callback(null, items);
+      } else {
+        callback(null, []);
+      }
+
     }
   ],
     function(err, results) {
       if (err) {
         res.send(500, err);
       } else {
-        console.log(_.flatten(results))
-        res.render('results', { items: _.flatten(results, true) });
+        var items = _.flatten(results, true);
+
+        var byProperty = function(prop) {
+          return function(a,b) {
+            if (typeof a[prop] == "number") {
+              return (a[prop] - b[prop]);
+            } else {
+              return ((a[prop] < b[prop]) ? -1 : ((a[prop] > b[prop]) ? 1 : 0));
+            }
+          };
+        };
+        var byPropertyReverse = function(prop) {
+          return function(a,b) {
+            if (typeof a[prop] == "number") {
+              return (b[prop] - a[prop]);
+            } else {
+              return ((a[prop] > b[prop]) ? -1 : ((a[prop] < b[prop]) ? 1 : 0));
+            }
+          };
+        };
+
+        if (sortPrice == 'asc') {
+          items.sort(byProperty('price'));
+        }
+        if (sortPrice == 'desc') {
+          items.sort(byPropertyReverse('price'));
+        }
+
+
+        res.render('results', {
+          items: items,
+          bag: req.session.bag,
+          bagCount: req.session.bag.length
+        });
       }
     });
-  var items = {};
-  res.render('results', {items: items });
 });
 
 http.createServer(app).listen(app.get('port'), function(){

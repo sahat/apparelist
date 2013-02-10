@@ -6,6 +6,9 @@ $(function() {
   init_masonry();
   clear_bag();
   sortPrice();
+  search_handler();
+
+
 
   $('#print').click(function() {
      window.print();
@@ -37,6 +40,26 @@ function store_handler() {
     var index = stores.indexOf(slugify($(this).children('a').text()));
     stores.splice(index, 1);
     console.log(stores);
+  });
+}
+
+function search_handler() {
+  $('#searchBtn').click(function() {
+    console.log('clicked');
+    var search = $('#searchInput').val();
+    search = search.replace(/[^-a-zA-Z0-9,&\s]+/ig, '');
+    search = search.replace(/-/gi, '+');
+    search = search.replace(/\s/gi, '+');
+    search = search.replace(/&/gi, '+');
+    search = search.toLowerCase();
+
+    var stores_querystring = '';
+    for (var i = 0; i < stores.length; i++) {
+      stores_querystring += '&stores=' + stores[i];
+    }
+
+    var href = $('#searchBtn').attr('href') + 'q=' + search + stores_querystring;
+    $('#searchBtn').attr('href', href);
   });
 }
 

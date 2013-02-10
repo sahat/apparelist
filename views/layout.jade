@@ -21,10 +21,10 @@ head
       .navbar.navbar-googlebar
         .navbar-inner
           a.brand(href='/') Apparelist
-          form.navbar-form.pull-left(action='/search')
-            input.input-large(type='text', placeholder='Search')
+          .navbar-form.pull-left
+            input.input-large#searchInput(type='text', placeholder='Search', name='search')
             |&nbsp;
-            button.btn.btn-primary(type='submit')
+            a#searchBtn.btn.btn-primary(href='/search?')
               i.icon-search
           ul.nav.pull-left
             li
@@ -85,7 +85,7 @@ head
       .container
         p.muted.credit
           | 2013 &copy;
-          a(href='http://sahat.me')  Sahat Yalkabov.
+          a(href='http://sahat.me')  Sahat Yalkabov. Contributors: Adam, Kojo.
           |  Powered by Node.js, MongoDB, (API).
     script(src='/javascripts/vendor/bootstrap.min.js')
     script(src='/javascripts/vendor/underscore-min.js')
