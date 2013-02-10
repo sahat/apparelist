@@ -2,10 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Sahat\Dropbox\Projects\fashionhack\node_modules\async\.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sahat\Dropbox\Projects\fashionhack\node_modules\async\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sahat\Dropbox\Projects\fashionhack\node_modules\async\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sahat\Dropbox\Projects\fashionhack\node_modules\async\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sahat\Dropbox\Projects\fashionhack\node_modules\express\node_modules\debug\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sahat\Dropbox\Projects\fashionhack\node_modules\express\node_modules\debug\debug.component.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sahat\Dropbox\Projects\fashionhack\node_modules\express\node_modules\debug\head.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sahat\Dropbox\Projects\fashionhack\node_modules\express\node_modules\debug\tail.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Courier-Bold.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Courier-Bold.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Courier-Bold.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Courier-Bold.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Courier-BoldOblique.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Courier-BoldOblique.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Courier-BoldOblique.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Courier-BoldOblique.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Courier-Oblique.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Courier-Oblique.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Courier-Oblique.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Courier-Oblique.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Courier.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Courier.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Courier.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Courier.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Helvetica-Bold.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Helvetica-Bold.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Helvetica-Bold.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Helvetica-Bold.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Helvetica-BoldOblique.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Helvetica-BoldOblique.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Helvetica-BoldOblique.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Helvetica-BoldOblique.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Helvetica-Oblique.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Helvetica-Oblique.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Helvetica-Oblique.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Helvetica-Oblique.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Helvetica.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Helvetica.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Helvetica.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Helvetica.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/debug/History.md" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/debug/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/MustRead.html" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/MustRead.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/MustRead.html" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/MustRead.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/async/README.md" afterPath="$PROJECT_DIR$/node_modules/async/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/README.md" afterPath="$PROJECT_DIR$/node_modules/jsdom/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/debug/Readme.md" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/debug/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Symbol.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Symbol.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Symbol.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Symbol.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Times-Bold.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Times-Bold.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Times-Bold.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Times-Bold.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Times-BoldItalic.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Times-BoldItalic.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Times-BoldItalic.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Times-BoldItalic.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Times-Italic.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Times-Italic.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Times-Italic.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Times-Italic.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Times-Roman.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/Times-Roman.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Times-Roman.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/Times-Roman.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/ZapfDingbats.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/js/font/data/ZapfDingbats.afm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/ZapfDingbats.afm" afterPath="$PROJECT_DIR$/node_modules/pdfkit/lib/font/data/ZapfDingbats.afm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/bootstrap.css" afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/client.js" afterPath="$PROJECT_DIR$/public/javascripts/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/async/lib/async.js" afterPath="$PROJECT_DIR$/node_modules/async/lib/async.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/contextify/build/config.gypi" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/contextify/build/config.gypi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/lib/jsdom/level1/core.js" afterPath="$PROJECT_DIR$/node_modules/jsdom/lib/jsdom/level1/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/lib/jsdom/level3/core.js" afterPath="$PROJECT_DIR$/node_modules/jsdom/lib/jsdom/level3/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/debug/debug.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/debug/debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/debug/lib/debug.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/debug/lib/debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/nwmatcher/lib/spidermonkey/dom.js" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/nwmatcher/lib/spidermonkey/dom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/lib/jsdom/browser/domtohtml.js" afterPath="$PROJECT_DIR$/node_modules/jsdom/lib/jsdom/browser/domtohtml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/express" afterPath="$PROJECT_DIR$/node_modules/.bin/express" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/bin/express" afterPath="$PROJECT_DIR$/node_modules/express/bin/express" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/lib/jsdom/level2/html.js" afterPath="$PROJECT_DIR$/node_modules/jsdom/lib/jsdom/level2/html.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/debug/index.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/debug/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/cssstyle/make_properties.pl" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/cssstyle/make_properties.pl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-gyp/bin/node-gyp.js" afterPath="$PROJECT_DIR$/node_modules/node-gyp/bin/node-gyp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/node-gyp" afterPath="$PROJECT_DIR$/node_modules/.bin/node-gyp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/nwmatcher/src/nwmatcher-base.js" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/nwmatcher/src/nwmatcher-base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/nwmatcher/src/nwmatcher.js" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/nwmatcher/src/nwmatcher.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/async/package.json" afterPath="$PROJECT_DIR$/node_modules/async/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/package.json" afterPath="$PROJECT_DIR$/node_modules/express/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/buffer-crc32/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/buffer-crc32/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/commander/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/bytes/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/bytes/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/formidable/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/formidable/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/pause/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/pause/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/qs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/cookie/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/cookie/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/cookie-signature/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/cookie-signature/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/debug/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/methods/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/methods/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/mkdirp/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/mkdirp/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/range-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/range-parser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/package.json" afterPath="$PROJECT_DIR$/node_modules/jsdom/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/contextify/package.json" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/contextify/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/contextify/node_modules/bindings/package.json" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/contextify/node_modules/bindings/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/cssom/package.json" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/cssom/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/cssstyle/package.json" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/cssstyle/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/htmlparser/package.json" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/htmlparser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/nwmatcher/package.json" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/nwmatcher/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/package.json" afterPath="$PROJECT_DIR$/node_modules/pdfkit/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/pdfkit/node_modules/png-js/package.json" afterPath="$PROJECT_DIR$/node_modules/pdfkit/node_modules/png-js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/package.json" afterPath="$PROJECT_DIR$/node_modules/request/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/underscore/package.json" afterPath="$PROJECT_DIR$/node_modules/underscore/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/underscore.string/package.json" afterPath="$PROJECT_DIR$/node_modules/underscore.string/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/htmlparser/profile" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/htmlparser/profile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/results.jade" afterPath="$PROJECT_DIR$/views/results.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/formidable/test/run.js" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/formidable/test/run.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/run.js" afterPath="$PROJECT_DIR$/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/run.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/run.js" afterPath="$PROJECT_DIR$/node_modules/request/node_modules/form-data/node_modules/combined-stream/test/run.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/node_modules/form-data/test/run.js" afterPath="$PROJECT_DIR$/node_modules/request/node_modules/form-data/test/run.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.less" afterPath="$PROJECT_DIR$/public/stylesheets/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -13,13 +107,13 @@
     <ignored path="fashionhack.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360498805569" ignored="false" />
-    <file path="/app.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360500875805" ignored="false" />
+    <file path="/app.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360511187211" ignored="false" />
     <file path="/test.html" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359001510712" ignored="false" />
-    <file path="/layout.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360500958597" ignored="false" />
+    <file path="/layout.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360510442006" ignored="false" />
     <file path="/style.less" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360492383521" ignored="false" />
     <file path="/a.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294188696" ignored="false" />
     <file path="/index.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360295330895" ignored="false" />
-    <file path="/results.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360479851241" ignored="false" />
+    <file path="/results.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360510342587" ignored="false" />
     <file path="/google-bootstrap.css" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360495953152" ignored="false" />
     <file path="/bootstrap.css" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360496010746" ignored="false" />
     <file path="/index.html" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359238863834" ignored="false" />
@@ -27,7 +121,6 @@
     <file path="/treedrag.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359237320763" ignored="false" />
     <file path="/main.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359324795934" ignored="false" />
     <file path="/stores.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360471981008" ignored="false" />
-    <file path="$PROJECT_DIR$/node_modules/jsdom/node_modules/nwmatcher/lib/spidermonkey/dom.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359592909891" ignored="false" />
     <file path="/client.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360501005433" ignored="false" />
     <file path="/a.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294154196" ignored="false" />
     <file path="/a.coffee" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294169670" ignored="false" />
@@ -98,7 +191,16 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="570" column="25" selection-start="19859" selection-end="19859" vertical-scroll-proportion="0.4803695">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,7 +227,7 @@
       <file leaf-file-name="results.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/results.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="38" selection-start="2259" selection-end="2259" vertical-scroll-proportion="0.0">
+            <state line="9" column="30" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,7 +245,7 @@
       <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="33" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.0">
+            <state line="60" column="26" selection-start="2295" selection-end="2312" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,7 +254,7 @@
       <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+            <state line="52" column="4" selection-start="1027" selection-end="1238" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,8 +263,14 @@
       <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="7" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="99" column="7" selection-start="1451" selection-end="1451" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1360508654356" expanded="true" signature="445:450" placeholder="{...}" />
+                <marker date="1360508654356" expanded="true" signature="478:500" placeholder="{...}" />
+                <marker date="1360508654356" expanded="true" signature="608:700" placeholder="{...}" />
+                <marker date="1360508654356" expanded="true" signature="604:696" placeholder="{...}" />
+                <marker date="1360508654356" expanded="true" signature="2455:2735" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,17 +300,17 @@
         <option value="$USER_HOME$/Downloads/Responsive_example_integrating_Twitter_Bootstrap_and_jQuery_Masonry/js/base.js" />
         <option value="$PROJECT_DIR$/public/javascripts/main.js" />
         <option value="$PROJECT_DIR$/bag.jade" />
-        <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/stores.js" />
-        <option value="$PROJECT_DIR$/views/results.jade" />
         <option value="$PROJECT_DIR$/TEMP_handm_if_else.js" />
         <option value="$PROJECT_DIR$/views/bag.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.less" />
         <option value="$PROJECT_DIR$/public/stylesheets/google-bootstrap.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/bootstrap.css" />
-        <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/client.js" />
+        <option value="$PROJECT_DIR$/views/results.jade" />
+        <option value="$PROJECT_DIR$/views/index.jade" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
@@ -435,6 +543,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fashionhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fashionhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -643,11 +765,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2165992" sideWeight="0.7268519" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2165992" sideWeight="0.72839504" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33543307" sideWeight="0.50951684" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27314815" sideWeight="0.48535872" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27160493" sideWeight="0.48535872" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -734,11 +856,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="61" selection-start="235" selection-end="235" vertical-scroll-proportion="0.033707865" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/google-bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1495" column="10" selection-start="47563" selection-end="47573" vertical-scroll-proportion="0.0">
@@ -762,28 +879,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="7" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="99" column="7" selection-start="1451" selection-end="1451" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1360508654356" expanded="true" signature="445:450" placeholder="{...}" />
+            <marker date="1360508654356" expanded="true" signature="478:500" placeholder="{...}" />
+            <marker date="1360508654356" expanded="true" signature="608:700" placeholder="{...}" />
+            <marker date="1360508654356" expanded="true" signature="604:696" placeholder="{...}" />
+            <marker date="1360508654356" expanded="true" signature="2455:2735" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/bag.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="16" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/results.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="38" selection-start="2259" selection-end="2259" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stores.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="282" column="16" selection-start="13406" selection-end="13406" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -812,6 +921,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/stores.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="282" column="16" selection-start="13406" selection-end="13406" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/pdfkit/js/mixins/images.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="25" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0">
@@ -819,23 +935,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/results.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="30" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="33" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.0">
+        <state line="60" column="26" selection-start="2295" selection-end="2312" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+        <state line="52" column="4" selection-start="1027" selection-end="1238" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="570" column="25" selection-start="19859" selection-end="19859" vertical-scroll-proportion="0.4803695">
           <folding />
         </state>
       </provider>

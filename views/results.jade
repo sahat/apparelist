@@ -1,6 +1,15 @@
 extends layout
 
 block content
+  .row.pagination-centered
+    h5 Sponsored Articles
+    for item in hearst.items
+      .span4
+        h4
+          a(href="#{item.origin_site_url}/#{item.url_name}") #{item.promo_title}
+        div #{item.description}
+
+  br
   .pagination-centered
     .btn-group
       a.btn.btn-info.dropdown-toggle(data-toggle='dropdown', href='#')

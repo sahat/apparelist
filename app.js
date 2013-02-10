@@ -104,7 +104,7 @@ app.get('/results', function(req, res) {
   if (!req.session.bag) {
     req.session.bag = [];
   }
-
+  var search = req.query.q || '';
   var type = req.query.type || '';
   var category = req.query.category || '';
   var store_array = req.query.stores;
@@ -238,19 +238,45 @@ app.get('/results', function(req, res) {
               }
             });
             callback(null, items);
-          }
+          },
         });
       } else {
         callback(null, []);
       }
+    },
+    function hearst(callback) {
+      if (category) {
+        var parsedCategory = category
+        parsedCategory = parsedCategory.replace(/[^-a-zA-Z0-9,&\s]+/ig, '');
+        parsedCategory = parsedCategory.replace(/-/gi, '+');
+        parsedCategory = parsedCategory.replace(/\s/gi, '+');
+        parsedCategory = parsedCategory.replace(/&/gi, '+');
+        parsedCategory = parsedCategory.toLowerCase();
+        var url = 'http://hearst.api.mashery.com/Article/search?keywords='+parsedCategory+'&_pretty=0&shape=full&start=0&limit=3&sort=publish_date%2Cdesc&total=0&api_key=nsuww68vv2b2yycg88bqttc3';
+      } else {
+        var parsedSearchQuery = search;
+        parsedSearchQuery = parsedSearchQuery.replace(/[^-a-zA-Z0-9,&\s]+/ig, '');
+        parsedSearchQuery = parsedSearchQuery.replace(/-/gi, '+');
+        parsedSearchQuery = parsedSearchQuery.replace(/\s/gi, '+');
+        parsedSearchQuery = parsedSearchQuery.replace(/&/gi, '+');
+        parsedSearchQuery = parsedSearchQuery.toLowerCase();
+        var url = 'http://hearst.api.mashery.com/Article/search?keywords='+parsedSearchQuery+'&_pretty=0&shape=full&start=0&limit=3&sort=publish_date%2Cdesc&total=0&api_key=nsuww68vv2b2yycg88bqttc3';
+
+      }
+      request.get({ url:url, json:true }, function (e, r, body) {
+        console.log(body);
+        callback(null, body);
+      });
     }
   ],
   function(err, results) {
     if (err) {
       res.send(500, err);
     } else {
-
-    var items = _.flatten(results, true);
+      console.log(results);
+      var hearst = results.pop();
+      var items = _.flatten(results, true);
+    }
 
     var byProperty = function(prop) {
       return function(a,b) {
@@ -279,11 +305,11 @@ app.get('/results', function(req, res) {
     }
 
     res.render('results', {
+      hearst: hearst,
       items: items,
       bag: req.session.bag,
       bagCount: req.session.bag.length
     });
-    }
   });
 });
 
@@ -489,12 +515,29 @@ app.get('/search', function(req, res) {
       } else {
         callback(null, []);
       }
+    },
+    function hearst(callback) {
+
+      var parsedSearchQuery = search_query;
+      parsedSearchQuery = parsedSearchQuery.replace(/[^-a-zA-Z0-9,&\s]+/ig, '');
+      parsedSearchQuery = parsedSearchQuery.replace(/-/gi, '+');
+      parsedSearchQuery = parsedSearchQuery.replace(/\s/gi, '+');
+      parsedSearchQuery = parsedSearchQuery.replace(/&/gi, '+');
+      parsedSearchQuery = parsedSearchQuery.toLowerCase();
+      var url = 'http://hearst.api.mashery.com/Article/search?keywords='+parsedSearchQuery+'&_pretty=0&shape=full&start=0&limit=3&sort=publish_date%2Cdesc&total=0&api_key=nsuww68vv2b2yycg88bqttc3';
+
+      request.get({ url:url, json:true }, function (e, r, body) {
+        console.log(body);
+        callback(null, body);
+      });
     }
   ],
     function(err, results) {
       if (err) {
         res.send(500, err);
       } else {
+
+        var hearst = results.pop();
         var items = _.flatten(results, true);
 
         var byProperty = function(prop) {
@@ -525,6 +568,7 @@ app.get('/search', function(req, res) {
 
 
         res.render('results', {
+          hearst: hearst,
           items: items,
           bag: req.session.bag,
           bagCount: req.session.bag.length
