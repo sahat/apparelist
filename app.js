@@ -364,13 +364,7 @@ app.post('/search', function(req, res) {
 });
 
 
-
-/**
- * Get /gilt
- */
- app.get('/gilt', function(req, res){
-
-    var gilt_api_key = '0fabb99b24a4ffbf826c077c3008859b';
+var gilt_api_key = '0fabb99b24a4ffbf826c077c3008859b';
 
     /*
      * Gilt.com is divided into stores. Currently there are four stores exposed by the API: 
@@ -394,6 +388,7 @@ app.post('/search', function(req, res) {
      */ 
      var product = '';
      var product_categories = "products/categories.json";
+     var categories = ["Boots", "Dresses", "Earrings", "Luggage", "Sofas"];
 
      var api_param = "?apikey=";
      var upcoming_sales_params = "sales/upcoming.json";
@@ -406,6 +401,14 @@ app.post('/search', function(req, res) {
       */ 
      var base_url = 'https://api.gilt.com/v1/';
 
+
+
+
+/**
+ * Get /gilt
+ */
+ app.get('/gilt', function(req, res){
+
     var upcoming_sales_url = base_url + upcoming_sales_params + api_param + gilt_api_key;
     //var upcoming_sales_url = "https://api.gilt.com/v1/sales/upcoming.json?apikey=" + gilt_api_key;
 
@@ -416,53 +419,128 @@ app.post('/search', function(req, res) {
         console.log(body.sales);
 
         res.render('gilt', {
+        sales: body.sales
+      });
+    });
+ });
+
+/**
+ * Get /women
+ */
+ app.get('/women', function(req, res){
+    var women_params = 'sales/women/upcoming.json';
+
+    var upcoming_sales_url = base_url + women_params + api_param + gilt_api_key;
+
+    var upcoming_sales = request.get({url:upcoming_sales_url, json:true}, function(e, r, body) {
+        
+        console.log(body.sales);
+
+        res.render('gilt_women', {
         //title: 'Gilt API'
         sales: body.sales
       });
     });
+ });
 
-    //console.log(upcoming_sales);
-
-
-  //request.get(upcoming_sales_url).pipe(res);
-
-    
-    /*
-    res.render('gilt', {
-      //title: 'Gilt API'
-      sales: upcoming_sales
-    });
-    
-    */
-    
-    
-/*
-    request('https://api.gilt.com/v1/sales/upcoming.json?apikey=0fabb99b24a4ffbf826c077c3008859b', function (error, response, body) {
-      if (!error && response.statusCode ==200) {
-        console.log(body) //Print page
-      }
-    })
-
+ /**
+ * Get /men
  */
-/*
-    var body = "Gilt Data";
-    res.setHeader('Content-Type', 'text/plain');
-    res.setHeader('Content-Length', body.length);
-    res.end(body);
+ app.get('/men', function(req, res){
+    var men_params = 'sales/men/upcoming.json';
 
-    */
+    var upcoming_sales_url = base_url + men_params + api_param + gilt_api_key;
+
+    var upcoming_sales = request.get({url:upcoming_sales_url, json:true}, function(e, r, body) {
+        
+        console.log(body.sales);
+
+        res.render('gilt_men', {
+        //title: 'Gilt API'
+        sales: body.sales
+      });
+    });
+ });
+
+ /**
+ * Get /kids
+ */
+ app.get('/kids', function(req, res){
+    var kids_params = 'sales/kids/upcoming.json';
+
+    var upcoming_sales_url = base_url + kids_params + api_param + gilt_api_key;
+
+    var upcoming_sales = request.get({url:upcoming_sales_url, json:true}, function(e, r, body) {
+        
+        console.log(body.sales);
+
+        res.render('gilt_kids', {
+        //title: 'Gilt API'
+        sales: body.sales
+      });
+    });
+ });
+
+ /**
+ * Get /home
+ */
+ app.get('/home', function(req, res){
+    var home_params = 'sales/women/upcoming.json';
+
+    var upcoming_sales_url = base_url + home_params + api_param + gilt_api_key;
+
+    var upcoming_sales = request.get({url:upcoming_sales_url, json:true}, function(e, r, body) {
+        
+        console.log(body.sales);
+
+        res.render('gilt_home', {
+        //title: 'Gilt API'
+        sales: body.sales
+      });
+    });
+ });
+
+  /**
+ * Get /product
+ *
+ app.get('/product', function(req, res){
+    var home_params = 'sales/women/upcoming.json';
+
+    var upcoming_sales_url = base_url + home_params + api_param + gilt_api_key;
+
+    var upcoming_sales = request.get({url:upcoming_sales_url, json:true}, function(e, r, body) {
+        
+        console.log(body.sales);
+
+        res.render('gilt_home', {
+        //title: 'Gilt API'
+        sales: body.sales
+      });
+    });
+ });
+
+*/
+
+   /**
+ * Get /gilt-search
+ */
+ app.get('/gilt-search', function(req, res){
+    var query = "";
+    var gilt_search_url = base_url + 'products/josql' + api_param + gilt_api_key + "&q=description%20LIKE%20'%25exquisite%25'";
+
+    console.log(gilt_search_url);
+    var gilt_search = request.get({url:gilt_search_url, json:true}, function(e, r, body) {
+        
+        console.log(body[0]);
+
+        res.render('gilt_search', {
+        //title: 'Gilt API'
+        searches: body
+      });
+    });
  });
 
  app.use(express.directory('lib/gilt.js'));
-
-
-
- app.use(function(req, res, next){
-    var ua = req.headers['user-agent'];
-
-    //var api = new GiltApi('');
- });
-
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
