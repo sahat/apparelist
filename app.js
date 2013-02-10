@@ -416,7 +416,7 @@ var gilt_api_key = '0fabb99b24a4ffbf826c077c3008859b';
         
         //x = JSON.parse(body)
 
-        console.log(body.sales);
+        console.log(body.sales[0]);
 
         res.render('gilt', {
         sales: body.sales
@@ -500,33 +500,56 @@ var gilt_api_key = '0fabb99b24a4ffbf826c077c3008859b';
     });
  });
 
-  /**
+ 
+ /**
  * Get /product
- *
- app.get('/product', function(req, res){
-    var home_params = 'sales/women/upcoming.json';
+ */
 
-    var upcoming_sales_url = base_url + home_params + api_param + gilt_api_key;
+ app.get('/sales-products', function(req, res){
+    var product_params = 'sales/women/upcoming.json';
 
-    var upcoming_sales = request.get({url:upcoming_sales_url, json:true}, function(e, r, body) {
+    var product_detail_url = base_url + home_params + api_param + gilt_api_key;
+
+    var product = request.get({url:upcoming_sales_url, json:true}, function(e, r, body) {
         
-        console.log(body.sales);
+        console.log(body);
 
-        res.render('gilt_home', {
+        res.render('gilt_sales_products', {
         //title: 'Gilt API'
-        sales: body.sales
+        products: body
       });
     });
  });
 
-*/
+
+ /**
+ * Get /product
+ */
+
+ app.get('/product', function(req, res){
+    var product_params = 'sales/women/upcoming.json';
+
+    var product_detail_url = base_url + home_params + api_param + gilt_api_key;
+
+    var product = request.get({url:upcoming_sales_url, json:true}, function(e, r, body) {
+        
+        console.log(body);
+
+        res.render('gilt_products', {
+        //title: 'Gilt API'
+        products: body
+      });
+    });
+ });
+
 
    /**
  * Get /gilt-search
  */
  app.get('/gilt-search', function(req, res){
-    var query = "";
-    var gilt_search_url = base_url + 'products/josql' + api_param + gilt_api_key + "&q=description%20LIKE%20'%25exquisite%25'";
+    var search_query = req.query.q;
+    console.log(search_query);
+    var gilt_search_url = base_url + 'products/josql' + api_param + gilt_api_key + "&q=name%20LIKE%20'%25a%25'";
 
     console.log(gilt_search_url);
     var gilt_search = request.get({url:gilt_search_url, json:true}, function(e, r, body) {

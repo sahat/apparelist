@@ -1,0 +1,25 @@
+extends gilt_layout
+
+block content
+  .page-header
+    h1 Upcoming Sales from Gilt...
+
+  .row-fluid
+    .span12
+
+        each sale in sales
+
+                  ul.nav.pull-left
+
+                    | <h3>#{sale.name}</h3>
+                    | <a href=#{sale.sale_url}><img src=#{sale.image_urls['744x281'][0].url}  alt="image"></a>
+                    //li= sale.sale
+                    //li= sale.sale_key
+                    //li= sale.store
+                    //li= sale.sale_url
+                    p
+                    li= sale.description
+                    //li= sale.begins
+                    //li= sale.ends
+                    //li= sale.image_urls['744x281'][0].url
+                    p

@@ -7,4 +7,23 @@ block content
   .row-fluid
     .span12
 
+        each search in searches
+
+                  ul.nav.pull-left
+
+                    | <h3>#{search.name}</h3>
+                    | <a href=#{search.sale_url}><img src=#{search.image_urls['1080x1440'][0].url}  alt="image"></a>
+                    //li= search.sale
+                    //li= search.sale_key
+                    //li= search.store
+                    //li= search.sale_url
+                    p
+                    li= search.content.description
+                    li= search.skus[0].msrp_price;
+                    li= search.skus[0].sale_price;
+                    |<a href=#{search.url}>Buy Now</a>
+                    //li= search.begins
+                    //li= search.ends
+                    //li= search.image_urls['744x281'][0].url
+                    p
        
