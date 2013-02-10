@@ -547,11 +547,11 @@ var gilt_api_key = '0fabb99b24a4ffbf826c077c3008859b';
  * Get /gilt-search
  */
  app.get('/gilt-search', function(req, res){
-    var search_query = req.query.q;
+    var search_query = encodeURIComponent(req.query.q);
     console.log(search_query);
-    var gilt_search_url = base_url + 'products/josql' + api_param + gilt_api_key + "&q=name%20LIKE%20'%25a%25'";
-
+    var gilt_search_url = base_url + 'products/josql' + api_param + gilt_api_key + "&q=name%20LIKE%20'%25" + search_query + "%25'";
     console.log(gilt_search_url);
+
     var gilt_search = request.get({url:gilt_search_url, json:true}, function(e, r, body) {
         
         console.log(body[0]);
