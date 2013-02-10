@@ -516,6 +516,33 @@ app.get('/search', function(req, res) {
         callback(null, []);
       }
     },
+    function guilt(callback) {
+      if (_.contains(store_array, 'guilt')) {
+
+        var product = '';
+        var product_categories = "products/categories.json";
+        var categories = ["Boots", "Dresses", "Earrings", "Luggage", "Sofas"];
+        var api_param = "?apikey=";
+        var upcoming_sales_params = "sales/upcoming.json";
+        var active_sales_params = "sales/active.json"
+        var sale_detail = ""
+        var affiliate_id = "";
+        var base_url = 'https://api.gilt.com/v1/';
+        var gilt_api_key = '0fabb99b24a4ffbf826c077c3008859b';
+        var search_query = encodeURIComponent(req.query.q);
+        var search_query = search_query.split(' ')[0];
+        console.log(search_query);
+        var gilt_search_url = base_url + 'products/josql' + api_param + gilt_api_key + "&q=name%20LIKE%20'%25" + search_query + "%25'";
+        console.log(gilt_search_url);
+
+        var gilt_search = request.get({url:gilt_search_url, json:true}, function(e, r, body) {
+          console.log(body);
+          callback(null, body);
+        });
+      } else {
+        callback(null, []);
+      }
+    },
     function hearst(callback) {
 
       var parsedSearchQuery = search_query;
@@ -536,10 +563,10 @@ app.get('/search', function(req, res) {
       if (err) {
         res.send(500, err);
       } else {
-
         var hearst = results.pop();
+        var guilt = results.pop();
         var items = _.flatten(results, true);
-
+        console.log('guilt', guilt);
         var byProperty = function(prop) {
           return function(a,b) {
             if (typeof a[prop] == "number") {
@@ -568,6 +595,7 @@ app.get('/search', function(req, res) {
 
 
         res.render('results', {
+          guilt: guilt,
           hearst: hearst,
           items: items,
           bag: req.session.bag,

@@ -47,6 +47,7 @@ block content
           button.btn.btn-block.btn-primary(id='item-#{item.id}')
             i.icon-shopping-cart
             |  Add To Bag
+
       script(type='text/javascript')
         $('#item-#{item.id}').toggle(function() {
           $.ajax({
@@ -78,3 +79,27 @@ block content
           toastr.error('An item has been removed from your bag.');
           $(this).removeClass('btn-danger').addClass('btn-primary').html('<i class="icon-shopping-cart"></i> Add to Bag');
         });
+
+    if typeof guilt != 'undefined' && guilt.length > 0
+      for item in guilt
+        .box
+          img.store-logo(src='https://evbdn.eventbrite.com/s3-s3/eventlogos/3328252/giltgroupe.jpeg')
+          br
+          img(src="#{item.image_urls['1080x1440'][0].url}")
+          a(href='#{item.sale_url}')
+          h6 $#{item.skus[0].sale_price}
+          button.btn.btn-block.btn-primary(id='item-#{item.id}')
+            i.icon-shopping-cart
+            |  Add To Bag
+
+          script(src='text/javascript')
+            $('#item-#{item.id}').toggle(function() {
+              $('#bagcount').text(parseInt($('#bagcount').text()) + 1);
+              toastr.success('An item has been added to your bag.');
+              $(this).removeClass('btn-primary').addClass('btn-danger').html('<i class="icon-trash"></i> Remove');
+              }, function() {
+                $('#bagcount').text(parseInt($('#bagcount').text()) - 1);
+                toastr.error('An item has been removed from your bag.');
+                $(this).removeClass('btn-danger').addClass('btn-primary').html('<i class="icon-shopping-cart"></i> Add to Bag');
+              });
+            });

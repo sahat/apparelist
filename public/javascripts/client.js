@@ -83,6 +83,17 @@ function category_handler() {
   });
 }
 
+
+$('#item-#{item.id}').toggle(function() {
+  $('#bagcount').text(parseInt($('#bagcount').text()) + 1);
+  toastr.success('An item has been added to your bag.');
+  $(this).removeClass('btn-primary').addClass('btn-danger').html('<i class="icon-trash"></i> Remove');
+}, function() {
+  $('#bagcount').text(parseInt($('#bagcount').text()) - 1);
+  toastr.error('An item has been removed from your bag.');
+  $(this).removeClass('btn-danger').addClass('btn-primary').html('<i class="icon-shopping-cart"></i> Add to Bag');
+});
+
 function sortPrice(){
   $('#ascending').click(function() {
 
