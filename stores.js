@@ -185,3 +185,14 @@ exports.armani_exchange = {
     sunglasses: ''
   }
 };
+
+exports.gilt = {
+    logo: '', 
+    name: 'Gilt', 
+    men: {
+
+    }, 
+    women: {
+
+    }
+};

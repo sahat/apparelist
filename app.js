@@ -49,8 +49,6 @@ app.get('/', function(req, res) {
  * POST /bag
  */
 app.post('/bag', function(req, res) {
-
-
   var item = {
     url: req.body.url,
     image: req.body.image,
@@ -364,6 +362,107 @@ app.post('/search', function(req, res) {
   var items = {};
   res.render('results', {items: items });
 });
+
+
+
+/**
+ * Get /gilt
+ */
+ app.get('/gilt', function(req, res){
+
+    var gilt_api_key = '0fabb99b24a4ffbf826c077c3008859b';
+
+    /*
+     * Gilt.com is divided into stores. Currently there are four stores exposed by the API: 
+     * Women, Men, Baby & Kids and Home.
+     */
+    var stores = ["women", "men", "Kids", "home"];
+
+    /*
+     * Sales are curated collections of purchasable products. 
+     * Most sales exposed via the API are flash sales, meaning 
+     * that the sales begin and end at particular times and that 
+     * inventory is limited to a specific pre-determined amount. 
+     * The particular amount of items available is not disclosed.
+     */
+     var sales = '';
+
+     /*
+      * Products are named items available for purchase. 
+      * For the purposes of the API, a product encompasses 
+      * a number of SKUs
+     */ 
+     var product = '';
+     var product_categories = "products/categories.json";
+
+     var api_param = "?apikey=";
+     var upcoming_sales_params = "sales/upcoming.json";
+     var active_sales_params = "sales/active.json"
+     var sale_detail = ""
+     var affiliate_id = "";
+
+     /* 
+      * 
+      */ 
+     var base_url = 'https://api.gilt.com/v1/';
+
+    var upcoming_sales_url = base_url + upcoming_sales_params + api_param + gilt_api_key;
+    //var upcoming_sales_url = "https://api.gilt.com/v1/sales/upcoming.json?apikey=" + gilt_api_key;
+
+    var upcoming_sales = request.get({url:upcoming_sales_url, json:true}, function(e, r, body) {
+        
+        //x = JSON.parse(body)
+
+        console.log(body.sales);
+
+        res.render('gilt', {
+        //title: 'Gilt API'
+        sales: body.sales
+      });
+    });
+
+    //console.log(upcoming_sales);
+
+
+  //request.get(upcoming_sales_url).pipe(res);
+
+    
+    /*
+    res.render('gilt', {
+      //title: 'Gilt API'
+      sales: upcoming_sales
+    });
+    
+    */
+    
+    
+/*
+    request('https://api.gilt.com/v1/sales/upcoming.json?apikey=0fabb99b24a4ffbf826c077c3008859b', function (error, response, body) {
+      if (!error && response.statusCode ==200) {
+        console.log(body) //Print page
+      }
+    })
+
+ */
+/*
+    var body = "Gilt Data";
+    res.setHeader('Content-Type', 'text/plain');
+    res.setHeader('Content-Length', body.length);
+    res.end(body);
+
+    */
+ });
+
+ app.use(express.directory('lib/gilt.js'));
+
+
+
+ app.use(function(req, res, next){
+    var ua = req.headers['user-agent'];
+
+    //var api = new GiltApi('');
+ });
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
