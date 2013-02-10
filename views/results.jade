@@ -44,6 +44,7 @@ block content
             type: 'post',
             url: '/bag',
             data: {
+              id: "#{item.id}",
               logo: "#{item.store.logo}",
               url: "#{item.url}",
               image: "#{item.image}",
@@ -58,7 +59,7 @@ block content
           $(this).removeClass('btn-primary').addClass('btn-danger').html('<i class="icon-trash"></i> Remove');
         }, function() {
           $.ajax({
-            type: 'post',
+            type: 'delete',
             url: '/bag',
             data: '#{item}',
             success: function() {

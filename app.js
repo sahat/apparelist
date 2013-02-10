@@ -17,8 +17,8 @@ var jsdom = require('jsdom');
 var async = require('async');
 var _ = require('underscore');
 var _s = require('underscore.string');
-var cheerio = require('cheerio');
-
+var PDFDocument = require('pdfkit');
+var fs = require('fs');
 
 var stores = require('./stores');
 
@@ -65,6 +65,7 @@ app.post('/bag', function(req, res) {
 
 
   var item = {
+    id: req.body.id,
     url: req.body.url,
     image: req.body.image,
     price: req.body.price,
@@ -83,8 +84,8 @@ app.post('/bag', function(req, res) {
 
 app.del('/bag', function(req, res) {
   var item = req.body.item;
-
-  // pull item from bag
+  var index = req.session.bag.indexOf(item);
+  req.session.bag.splice(index, 1);
   res.end();
 });
 
@@ -399,6 +400,60 @@ app.get('/search', function(req, res) {
         });
       }
     });
+});
+
+app.get('/pdf', function(req, res) {
+  var items = req.body.bag;
+
+  var doc = new PDFDocument();
+
+  /**
+   * iterate in a for loop each doc.page
+   * each page has item image, title, price, store logo
+   * items is an array of individual items
+   */
+
+
+  /*
+   # Render the image at full size
+   doc.image('images/test.jpeg', 100, 100)
+   .text('Full size', 100, 85)
+
+   # Fit the image within the dimensions
+   doc.image('images/test.jpeg', 350, 100, fit: [100, 100])
+   .rect(350, 100, 100, 100)
+   .stroke()
+   .text('Fit', 350, 85)
+
+   # Stretch the image
+   doc.image('images/test.jpeg', 350, 265, width: 200, height: 100)
+   .text('Stretch', 350, 250)
+
+
+   */
+  doc
+    .fontSize(25)
+    .text('Some text with an embedded font!', 100, 100)
+  doc.addPage()
+    .fontSize(25)
+    .text('Here is some vector graphics...', 100, 100)
+  doc.save()
+    .moveTo(100, 150)
+    .lineTo(100, 250)
+    .lineTo(200, 250)
+    .fill("#FF3300");
+  doc.scale(0.6)
+    .translate(470, -380)
+    .path('M 250,75 L 323,301 131,161 369,161 177,301 z')
+    .fill('red', 'even-odd')
+    .restore();
+  doc.addPage()
+    .fillColor("blue")
+    .text('Here is a link!', 100, 100);
+  doc.write('Apparelist.pdf');
+
+  // download pdf
+  res.download(__dirname + '/Apparelist.pdf');
 });
 
 http.createServer(app).listen(app.get('port'), function(){

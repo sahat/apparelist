@@ -10,7 +10,7 @@ block content
         th Action
       tbody
         for item in bag
-          tr.bag-items
+          tr.bag-items(id='row-#{item.id}')
             td
               img.img-polaroid(src='#{item.image}')
             td
@@ -22,9 +22,22 @@ block content
               button.btn.btn-mini.btn-danger(id='item-#{item.id}')
                 i.icon-trash
                 |  Remove
-              button.btn.btn-mini.btn-success(id='item-#{item.id}')
+              button.btn.btn-mini.btn-success
                 i.icon-shopping-cart
-                |  Go to...
-              button.btn.btn-mini(id='item-#{item.id}')
+                |  Buy
+              button.btn.btn-mini.btn-warning
                 i.icon-share
                 |  Share
+          script(type='text/javascript')
+            $('#item-#{item.id}').click(function() {
+              $.ajax({
+                type: 'delete',
+                url: '/bag',
+                data: '#{item}',
+                success: function() {
+                  $('#bagcount').text(parseInt($('#bagcount').text()) - 1);
+                }
+              });
+              toastr.error('An item has been removed from your bag.');
+              $('#row-#{item.id}').remove();
+            });

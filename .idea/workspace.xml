@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/macys.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/uniqlo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/uniqlo.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bag.jade" afterPath="$PROJECT_DIR$/views/bag.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/results.jade" afterPath="$PROJECT_DIR$/views/results.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fashionhack.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360474006036" ignored="false" />
-    <file path="/app.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360473349254" ignored="false" />
+    <file path="/Dummy.txt" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360474043648" ignored="false" />
+    <file path="/app.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360482604958" ignored="false" />
     <file path="/test.html" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359001510712" ignored="false" />
-    <file path="/layout.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360473813499" ignored="false" />
+    <file path="/layout.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360480827903" ignored="false" />
     <file path="/style.less" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360466826180" ignored="false" />
     <file path="/a.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294188696" ignored="false" />
     <file path="/index.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360295330895" ignored="false" />
-    <file path="/results.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360466415450" ignored="false" />
+    <file path="/results.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360479851241" ignored="false" />
     <file path="/google-bootstrap.css" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359093840879" ignored="false" />
     <file path="/bootstrap.css" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359093892027" ignored="false" />
     <file path="/index.html" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359238863834" ignored="false" />
@@ -32,7 +33,7 @@
     <file path="/a.html" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294183493" ignored="false" />
     <file path="/a.less" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294193418" ignored="false" />
     <file path="/a.xml" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294380610" ignored="false" />
-    <file path="/bag.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360466892085" ignored="false" />
+    <file path="/bag.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360480056448" ignored="false" />
     <file path="/style.css" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360426059737" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,11 +96,11 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="30" selection-start="551" selection-end="551" vertical-scroll-proportion="0.5486111">
+            <state line="402" column="3" selection-start="11919" selection-end="11919" vertical-scroll-proportion="0.7986111">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#6019#7447#0" expanded="false" />
-                <element signature="e#7478#8411#0" expanded="false" />
+                <element signature="e#6122#7550#0" expanded="false" />
+                <element signature="e#7581#8514#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -117,7 +118,7 @@
       <file leaf-file-name="results.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/results.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="94" selection-start="925" selection-end="925" vertical-scroll-proportion="-9.6">
+            <state line="46" column="28" selection-start="1282" selection-end="1282" vertical-scroll-proportion="-3.0">
               <folding />
             </state>
           </provider>
@@ -126,7 +127,7 @@
       <file leaf-file-name="bag.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/bag.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+            <state line="12" column="41" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,7 +136,7 @@
       <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="29" selection-start="2101" selection-end="2536" vertical-scroll-proportion="0.0">
+            <state line="47" column="32" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -193,10 +194,10 @@
         <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/public/javascripts/client.js" />
-        <option value="$PROJECT_DIR$/views/results.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.less" />
-        <option value="$PROJECT_DIR$/views/bag.jade" />
         <option value="$PROJECT_DIR$/stores.js" />
+        <option value="$PROJECT_DIR$/views/results.jade" />
+        <option value="$PROJECT_DIR$/views/bag.jade" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/app.js" />
       </list>
@@ -434,60 +435,6 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fashionhack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fashionhack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fashionhack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fashionhack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fashionhack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fashionhack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -630,7 +577,11 @@
       <created>1360474008887</created>
       <updated>1360474008887</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added store images">
+      <created>1360474046556</created>
+      <updated>1360474046556</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -696,7 +647,7 @@
     <option name="UPDATE_FILTER_SCOPE_NAME" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added store images" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -720,6 +671,7 @@
     <MESSAGE value="added clearbag function and women categories to stores.js" />
     <MESSAGE value="fixed name and urls for express store" />
     <MESSAGE value="added todo" />
+    <MESSAGE value="added store images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -782,20 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/results.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="94" selection-start="925" selection-end="925" vertical-scroll-proportion="-9.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/bag.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="84" column="16" selection-start="1324" selection-end="1324" vertical-scroll-proportion="-15.6">
@@ -820,20 +758,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/results.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="28" selection-start="1282" selection-end="1282" vertical-scroll-proportion="-3.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/bag.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="41" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="29" selection-start="2101" selection-end="2536" vertical-scroll-proportion="0.0">
+        <state line="47" column="32" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="551" selection-end="551" vertical-scroll-proportion="0.5486111">
+        <state line="402" column="3" selection-start="11919" selection-end="11919" vertical-scroll-proportion="0.7986111">
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#6019#7447#0" expanded="false" />
-            <element signature="e#7478#8411#0" expanded="false" />
+            <element signature="e#6122#7550#0" expanded="false" />
+            <element signature="e#7581#8514#0" expanded="false" />
           </folding>
         </state>
       </provider>
