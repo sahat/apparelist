@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bag.jade" afterPath="$PROJECT_DIR$/views/bag.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/results.jade" afterPath="$PROJECT_DIR$/views/results.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stores.js" afterPath="$PROJECT_DIR$/stores.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.less" afterPath="$PROJECT_DIR$/public/stylesheets/style.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/macys.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/uniqlo.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/uniqlo.jpeg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fashionhack.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360460867975" ignored="false" />
+    <file path="/Dummy.txt" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360474006036" ignored="false" />
     <file path="/app.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360473349254" ignored="false" />
     <file path="/test.html" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359001510712" ignored="false" />
     <file path="/layout.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360473813499" ignored="false" />
@@ -99,7 +95,7 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="46" selection-start="365" selection-end="365" vertical-scroll-proportion="0.2777778">
+            <state line="16" column="30" selection-start="551" selection-end="551" vertical-scroll-proportion="0.5486111">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#6019#7447#0" expanded="false" />
@@ -630,7 +626,11 @@
       <created>1360460871024</created>
       <updated>1360460871024</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added todo">
+      <created>1360474008887</created>
+      <updated>1360474008887</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -696,7 +696,7 @@
     <option name="UPDATE_FILTER_SCOPE_NAME" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed name and urls for express store" />
+    <option name="LAST_COMMIT_MESSAGE" value="added todo" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -719,6 +719,7 @@
     <MESSAGE value="bag count incrementer/decrementer" />
     <MESSAGE value="added clearbag function and women categories to stores.js" />
     <MESSAGE value="fixed name and urls for express store" />
+    <MESSAGE value="added todo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -828,7 +829,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="46" selection-start="365" selection-end="365" vertical-scroll-proportion="0.2777778">
+        <state line="16" column="30" selection-start="551" selection-end="551" vertical-scroll-proportion="0.5486111">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#6019#7447#0" expanded="false" />
