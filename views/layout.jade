@@ -63,14 +63,18 @@ head
         .page-header.pagination-centered
           h1 Browse your favorite stores from one site.
         block content
-      
       #push
       #push
       #push
       #push
     #footer
-      .thank-you
-        |Thank you for the fun times! Please note, we didn't use the sponsors below, but we sure would have like to!
+      .thank-you.pagination-centered.muted
+        | Thank you for the fun times! Please note, we didn't use the sponsors below, but we sure would have like to!
+        p
+          | 2013 &copy;
+          a(href='http://sahat.me')  Sahat Yalkabov.
+          |  Contributors: Adam, Kojo.
+          strong Powered by Node.js, Hearst API, Gilt, Microsoft Azure.
       .container
         .brands.pagination-centered
           span(class="brand")
@@ -88,11 +92,7 @@ head
           span(class="brand")
             img(src="http://singly.com/wp-content/themes/singly/images/singly-logo_300.png", height="60", width="80")
 
-        p.muted.credit
-          | 2013 &copy;
-          a(href='http://sahat.me')  Sahat Yalkabov.
-          |  Contributors: Adam, Kojo.
-          |  Powered by Node.js, Hearst API, Singly, Microsoft Azure.
+
     script(src='/javascripts/vendor/bootstrap.min.js')
     script(src='/javascripts/vendor/underscore-min.js')
     script(src='/javascripts/vendor/toastr.js')
