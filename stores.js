@@ -40,7 +40,7 @@ exports.express = {
     swimwear: '',
     watches: 'http://www.express.com/watches-1087/control/show/80/index.cat',
     belts: 'http://www.express.com/belts-38/control/show/80/index.cat',
-    hats: '',
+    hats: 'http://www.express.com/fashion-scarves-hats-37/control/show/80/index.cat',
     sunglasses: 'http://www.express.com/sunglasses-565/control/show/80/index.cat'
   }
 };
