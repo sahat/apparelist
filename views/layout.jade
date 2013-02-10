@@ -56,12 +56,12 @@ head
               a#bag.dropdown-toggle(href='#', data-toggle='dropdown')
                 i.icon-briefcase
                 |&nbsp;
-                span#bagcount 0
+                span#bagcount #{bagCount}
                 |  item(s)
                 i.icon-angle-down
                 ul.dropdown-menu
                   li
-                    a(href='#')
+                    a(href='/shoppingbag')
                       i.icon-shopping-cart
                       | View my bag
                   li
@@ -74,7 +74,7 @@ head
                       i.icon-download-alt
                       | Save to PDF
                   li
-                    a(href='#')
+                    a#print(href='#')
                       i.icon-print
                       | Print
       .container

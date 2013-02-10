@@ -7,7 +7,9 @@ $(function() {
   clear_bag();
   sortPrice();
 
-
+  $('#print').click(function() {
+     window.print();
+  });
   $(".collapse").collapse()
 });
 

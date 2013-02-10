@@ -69,44 +69,9 @@ code {
 .store-logo {
   max-height: 20px;
 }
-.isotope-item {
-  z-index: 2;
+.bag-items {
+  background: #fff;
 }
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}
-/* Isotope Transitions
-------------------------------- */
-.isotope,
-.isotope .item {
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -ms-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s;
-}
-.isotope {
-  -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
-  -ms-transition-property: height, width;
-  -o-transition-property: height, width;
-  transition-property: height, width;
-}
-.isotope .item {
-  -webkit-transition-property: -webkit-transform, opacity;
-  -moz-transition-property: -moz-transform, opacity;
-  -ms-transition-property: -ms-transform, opacity;
-  -o-transition-property: top, left, opacity;
-  transition-property: transform, opacity;
-}
-/* JavaScript event trig­gered by media query rules
-   @see: http://www.paulrhayes.com/2011-11/use-css-transitions-to-link-media-queries-and-javascript/
-------------------------------- */
-.mq {
-  -webkit-transition: width 0.001ms;
-  -moz-transition: width 0.001ms;
-  -o-transition: width 0.001ms;
-  transition: width 0.001ms;
-  width: 0;
+.tr-bag {
+  background: #f1f1f1;
 }

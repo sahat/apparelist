@@ -23,7 +23,7 @@ app.configure(function(){
   app.use(express.cookieParser('jsrocks'));
   app.use(express.session({ secret: 'jsrocks' }));
   app.use(app.router);
-  app.use(require('less-middleware')({ src: __dirname + '/public' }));
+  app.use(require('less-middleware')({ src: __dirname + '//public' }));
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
@@ -31,18 +31,40 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+/**
+ * GET /index
+ */
 app.get('/', function(req, res) {
-  res.render('index', {bag: req.session.bag});
+  if (!req.session.bag) {
+    req.session.bag = [];
+  }
+
+  res.render('index', {
+    bag: req.session.bag,
+    bagCount: req.session.bag.length
+  });
 });
 
+/**
+ * POST /bag
+ */
 app.post('/bag', function(req, res) {
-  var item = req.body.item;
+
+
+  var item = {
+    url: req.body.url,
+    image: req.body.image,
+    price: req.body.price,
+    name: req.body.name,
+    logo: req.body.logo
+  }
 
   if (!req.session.bag) {
     req.session.bag = [];
   }
 
   req.session.bag.push(item);
+  console.log(req.session.bag);
   res.end();
 });
 
@@ -58,14 +80,35 @@ app.post('/clearbag', function(req, res) {
   res.end();
 });
 
-app.post('/')
+/**
+ * GET /shoppingbag
+ */
+app.get('/shoppingbag', function(req, res) {
+  if (!req.session.bag) {
+    req.session.bag = [];
+  }
 
+  res.render('bag', {
+    bag: req.session.bag,
+    bagCount: req.session.bag.length
+  });
+});
+
+/**
+ * GET /results
+ */
 app.get('/results', function(req, res) {
+  if (!req.session.bag) {
+    req.session.bag = [];
+  }
+
   var type = req.query.type || '';
   var category = req.query.category || '';
   var store_array = req.query.stores;
   var sortPrice = req.query.price;
 
+
+  console.log(type, category, store_array);
   // when a single store is selected, it is passed a string
   if (typeof store_array === 'string') {
     var temp = store_array;
@@ -73,23 +116,41 @@ app.get('/results', function(req, res) {
     store_array.push(temp);
   }
 
-  console.log(store_array)
   async.parallel([
     function express(callback) {
       if (_.contains(store_array, 'express')) {
+        console.log('found express');
         jsdom.env({
           html: stores.express[type][category],
           scripts: ["http://code.jquery.com/jquery.js"],
           done: function (errors, window) {
             var $ = window.$;
             var items = [];
-            $('div.cat-thu-product').each(function(index, productElement) {
+
+
+            if($('div.cat-cat-item').length > 0) {
+              var container = 'div.cat-cat-item';
+            } else {
+              var container = 'div.cat-thu-product';
+            }
+
+            console.log(container);
+            $(container).each(function(index, productElement) {
+              console.log('inside loop');
+
+              if($('div.cat-cat-item').length > 0) {
+                var img = '.cat-cat-prod-img';
+              } else {
+                console.log('cat-thu-p-ima');
+                var img = '.cat-thu-p-ima';
+              }
+
               var product = {
                 id: 'express_' + index,
                 url: 'http://www.express.com' + $('li.cat-thu-name a', productElement).attr('href'),
                 name: $('li.cat-thu-name a', productElement).text().trim(),
                 price: $('ul li strong', productElement).text(),
-                image: $('.cat-thu-p-ima', productElement).attr('src'),
+                image: $(img, productElement).attr('src'),
                 colors: [],
                 store: { logo: stores.express.logo, name: stores.express.name }
               };
@@ -247,7 +308,11 @@ app.get('/results', function(req, res) {
       items.sort(byPropertyReverse('price'));
     }
 
-    res.render('results', { items: items });
+    res.render('results', {
+      items: items,
+      bag: req.session.bag,
+      bagCount: req.session.bag.length
+    });
     }
   });
 });

@@ -43,7 +43,13 @@ block content
           $.ajax({
             type: 'post',
             url: '/bag',
-            data: '#{item}',
+            data: {
+              logo: "#{item.store.logo}",
+              url: "#{item.url}",
+              image: "#{item.image}",
+              price: "#{item.price}",
+              name: "#{item.name}"
+            },
             success: function() {
               $('#bagcount').text(parseInt($('#bagcount').text()) + 1);
             }

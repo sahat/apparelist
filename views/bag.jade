@@ -1,0 +1,30 @@
+extends layout
+block content
+
+  table.table.table-bordered
+    thead
+      tr.tr-bag
+        th Image
+        th Name / Brand
+        th Price
+        th Action
+      tbody
+        for item in bag
+          tr.bag-items
+            td
+              img.img-polaroid(src='#{item.image}')
+            td
+              img(src='#{item.logo}')
+              .lead #{item.name}
+            td
+              .lead #{item.price}
+            td
+              button.btn.btn-mini.btn-danger(id='item-#{item.id}')
+                i.icon-trash
+                |  Remove
+              button.btn.btn-mini.btn-success(id='item-#{item.id}')
+                i.icon-shopping-cart
+                |  Go to...
+              button.btn.btn-mini(id='item-#{item.id}')
+                i.icon-share
+                |  Share

@@ -69,12 +69,12 @@ exports.handm = {
     sunglasses: 'http://www.hm.com/us/subdepartment/MEN?Nr=4294927625#Nr=4294919597'
   },
   women: {
-    dresses: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943#Nr=4294960648',
-    tops: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943#Nr=4294962278',
-    t_shirts: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943#Nr=4294928224',
-    sweaters: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943#Nr=4294928033',
-    jackets: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943#Nr=4294928068',
-    coats: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943#Nr=4294953165',
+    dresses: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294960648',
+    tops: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943',
+    t_shirts: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943',
+    sweaters: 'http://www.hm.com/us/subdepartment/LADIES?Nr=429495694',
+    jackets: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294963529',
+    coats: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294963529',
     leggings: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943#Nr=4294960522',
     shorts: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943#Nr=4294960292',
     skirts: 'http://www.hm.com/us/subdepartment/LADIES?Nr=4294956943#Nr=4294962650',
