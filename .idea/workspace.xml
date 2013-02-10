@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.less" afterPath="$PROJECT_DIR$/public/stylesheets/style.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/results.jade" afterPath="$PROJECT_DIR$/views/results.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fashionhack.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360447889514" ignored="false" />
-    <file path="/app.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360454685765" ignored="false" />
+    <file path="/app.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360460856899" ignored="false" />
     <file path="/test.html" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359001510712" ignored="false" />
     <file path="/layout.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360457033240" ignored="false" />
     <file path="/style.less" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360455884621" ignored="false" />
     <file path="/a.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294188696" ignored="false" />
     <file path="/index.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360295330895" ignored="false" />
-    <file path="/results.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360450894121" ignored="false" />
+    <file path="/results.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360460306919" ignored="false" />
     <file path="/google-bootstrap.css" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359093840879" ignored="false" />
     <file path="/bootstrap.css" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359093892027" ignored="false" />
     <file path="/index.html" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359238863834" ignored="false" />
@@ -95,7 +94,7 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="245" column="10" selection-start="7181" selection-end="7181" vertical-scroll-proportion="1.0145985">
+            <state line="150" column="40" selection-start="3469" selection-end="3469" vertical-scroll-proportion="0.3211679">
               <folding />
             </state>
           </provider>
@@ -104,7 +103,7 @@
       <file leaf-file-name="results.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/results.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="34" selection-start="963" selection-end="1076" vertical-scroll-proportion="-12.6">
+            <state line="21" column="86" selection-start="532" selection-end="532" vertical-scroll-proportion="-9.0">
               <folding />
             </state>
           </provider>
@@ -198,12 +197,12 @@
         <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/public/javascripts/client.js" />
-        <option value="$PROJECT_DIR$/views/results.jade" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/bag.jade" />
         <option value="$PROJECT_DIR$/stores.js" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.less" />
+        <option value="$PROJECT_DIR$/views/results.jade" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -739,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/results.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="34" selection-start="963" selection-end="1076" vertical-scroll-proportion="-12.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/bag.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="88" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0">
@@ -798,9 +790,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/results.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="86" selection-start="532" selection-end="532" vertical-scroll-proportion="-9.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="10" selection-start="7181" selection-end="7181" vertical-scroll-proportion="1.0145985">
+        <state line="150" column="40" selection-start="3469" selection-end="3469" vertical-scroll-proportion="0.3211679">
           <folding />
         </state>
       </provider>

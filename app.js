@@ -140,15 +140,19 @@ app.get('/results', function(req, res) {
 
               if($('div.cat-cat-item').length > 0) {
                 var img = '.cat-cat-prod-img';
+                var name = 'li.cat-cat-prod-name a';
+
               } else {
                 console.log('cat-thu-p-ima');
                 var img = '.cat-thu-p-ima';
+                var name = 'li.cat-thu-name a';
+
               }
 
               var product = {
                 id: 'express_' + index,
-                url: 'http://www.express.com' + $('li.cat-thu-name a', productElement).attr('href'),
-                name: $('li.cat-thu-name a', productElement).text().trim(),
+                url: 'http://www.express.com' + $(name, productElement).attr('href'),
+                name: $(name, productElement).text().trim(),
                 price: $('ul li strong', productElement).text(),
                 image: $(img, productElement).attr('src'),
                 colors: [],

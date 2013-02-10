@@ -30,6 +30,7 @@ block content
         a(href='#{item.url}')
           img(src='#{item.image}', id='image-#{item.id}')
         .caption
+          h5 #{item.name}
           .colors
             for color in item.colors
               img(src='#{color.imageUrl}', title='#{color.name}', width='15px')
