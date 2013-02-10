@@ -1,6 +1,7 @@
      function sortSearchString(searchString){
 
           var searchUrl;
+
           var result = searchString.match(/pants/i);
           console.log(result);
           if (searchString.match(/shirt/i) != null){

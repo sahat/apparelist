@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bag.jade" afterPath="$PROJECT_DIR$/views/bag.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/results.jade" afterPath="$PROJECT_DIR$/views/results.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TEMP_handm_if_else.js" afterPath="$PROJECT_DIR$/TEMP_handm_if_else.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fashionhack.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360474043648" ignored="false" />
+    <file path="/Dummy.txt" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360482611921" ignored="false" />
     <file path="/app.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360482604958" ignored="false" />
     <file path="/test.html" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359001510712" ignored="false" />
     <file path="/layout.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360480827903" ignored="false" />
@@ -93,15 +90,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="402" column="3" selection-start="11919" selection-end="11919" vertical-scroll-proportion="0.7986111">
+            <state line="402" column="3" selection-start="11919" selection-end="11919" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#6122#7550#0" expanded="false" />
                 <element signature="e#7581#8514#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TEMP_handm_if_else.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TEMP_handm_if_else.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="7" selection-start="72" selection-end="72" vertical-scroll-proportion="0.106132075">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,7 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/tree/jqtree.css" />
         <option value="$PROJECT_DIR$/public/tree/treedrag.css" />
         <option value="$PROJECT_DIR$/public/tree/treedrag.js" />
         <option value="$PROJECT_DIR$/public/tree/index.html" />
@@ -200,6 +205,7 @@
         <option value="$PROJECT_DIR$/views/bag.jade" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/TEMP_handm_if_else.js" />
       </list>
     </option>
   </component>
@@ -581,7 +587,11 @@
       <created>1360474046556</created>
       <updated>1360474046556</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added pdf">
+      <created>1360482617047</created>
+      <updated>1360482617047</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,7 +657,7 @@
     <option name="UPDATE_FILTER_SCOPE_NAME" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added store images" />
+    <option name="LAST_COMMIT_MESSAGE" value="added pdf" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -672,6 +682,7 @@
     <MESSAGE value="fixed name and urls for express store" />
     <MESSAGE value="added todo" />
     <MESSAGE value="added store images" />
+    <MESSAGE value="added pdf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -679,11 +690,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../csc322/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="37" selection-start="953" selection-end="1003" vertical-scroll-proportion="0.05172414" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bag.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="29" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" />
@@ -781,12 +787,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="402" column="3" selection-start="11919" selection-end="11919" vertical-scroll-proportion="0.7986111">
+        <state line="402" column="3" selection-start="11919" selection-end="11919" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#6122#7550#0" expanded="false" />
             <element signature="e#7581#8514#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TEMP_handm_if_else.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="7" selection-start="72" selection-end="72" vertical-scroll-proportion="0.106132075">
+          <folding />
         </state>
       </provider>
     </entry>
