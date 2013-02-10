@@ -78,3 +78,74 @@ code {
 .tr-bag {
   background: #f1f1f1;
 }
+.ribbon {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 28px;
+  color: #8699A0;
+  text-shadow: 0 0 1px #758890;
+  margin: 120px 0;
+  font-family: arial, verdana;
+  outline: none;
+  padding: 14px 30px;
+  position: relative;
+  text-transform: uppercase;
+  /*A little shadow for 3d effect*/
+
+  /*Finally another shadow to negate some aspects of the :after element to complete the effect. This drops a shrinked shadow over the :after element with the same color like that of the background. The shadow is shrinked by the same offset amount = 18. And it is moved down by twice the offset amount to cover the entire height of the :after element*/
+
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1), 0 36px 0 -18px #b1e3e2;
+}
+/*The ribbon ends*/
+.ribbon:before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: -15%;
+  z-index: -1;
+  width: 130%;
+  /*We will be using the triangle logic - 2 sided borders and 0 height. That will create negative triangles on the left and right*/
+
+  height: 0;
+  border: 28px solid rgba(0, 0, 0, 0);
+  border-left: 28px solid #B1E3E2;
+  border-right: 28px solid #B1E3E2;
+  /*Same color as the container which is the body in this case*/
+
+}
+/*The after pseudo element will negatve the bottom part of the ribbon completing the effect*/
+.ribbon:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  /*The height of the top border is same as width of the left/right borders for the smoothest effect. The height of the top border is also the same as the offset the :before element has from the top*/
+
+  border-top: 18px solid #99acb2;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+}
+.ribbon,
+.ribbon:before {
+  background-image: linear-gradient(transparent 8%, rgba(0, 0, 0, 0.1) 8%, rgba(0, 0, 0, 0.1) 14%, transparent 14%, transparent 86%, rgba(0, 0, 0, 0.1) 86%, rgba(0, 0, 0, 0.1) 92%, transparent 92%), /*white gloss gradient*/
+ linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)), /*thin stripes*/
+ linear-gradient(45deg, transparent 40%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.1) 60%, transparent 60%), /*white base*/
+ linear-gradient(#ffffff, #ffffff);
+  background-size: cover, /*borders*/
+ cover, /*white gloss*/
+ 4px 4px, /*thin stripes*/
+ cover;
+  /*base white*/
+
+}
+.ribbon,
+.ribbon:before,
+.ribbon:after {
+  box-sizing: border-box;
+  /*Fix to make the borders appear on the ribbon ends also*/
+
+  background-origin: border-box;
+}

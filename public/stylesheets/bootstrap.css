@@ -4084,7 +4084,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav-tabs.nav-stacked > li > a:hover {
   z-index: 2;
-  border-color: #ddd;
+  border-color: red;
 }
 
 .nav-pills.nav-stacked > li > a {

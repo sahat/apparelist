@@ -9,6 +9,9 @@ $(function() {
   search_handler();
 
 
+  $('#pdf').click(function() {
+    window.print();
+  });
 
   $('#print').click(function() {
      window.print();

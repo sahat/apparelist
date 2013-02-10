@@ -1,13 +1,4 @@
-// TODO: Save to PDF: http://pdfkit.org/
-// TODO: UNIQLO urls
-// TODO: API calls to HEARST (ad category)
-// TODO: AZURE
-// TODO: view bag button links
-// TODO: view bag share button (facebook api via Singly)
-// TODO: view bag detailed product page information (additional jsdom request) OPTIONAL
-// TODO: UI touchups + pen/paper UI brainstorm
-
-
+var url = require('url');
 var express = require('express');
 var http = require('http');
 var path = require('path');
@@ -18,7 +9,6 @@ var _ = require('underscore');
 var _s = require('underscore.string');
 var PDFDocument = require('pdfkit');
 var fs = require('fs');
-
 var stores = require('./stores');
 
 var app = express();
@@ -201,7 +191,7 @@ app.get('/results', function(req, res) {
 
               var product = {
                 id: 'uniqlo' + index,
-                url: 'http://www.uniqlo.com' + $('.titleWrapper a', productElement).attr('href'),
+                url: $('.titleWrapper a', productElement).attr('href'),
                 name: $('.titleWrapper a span', productElement).text(),
                 price: $('.price', productElement).text().trim(),
                 image: $('.productIMG a img', productElement).attr('src'),
@@ -543,38 +533,16 @@ app.get('/search', function(req, res) {
     });
 });
 
-app.get('/pdf', function(req, res) {
-  var items = req.body.bag;
-
+/*
+app.post('/pdf', function(req, res) {
   var doc = new PDFDocument();
-
-  /**
-   * iterate in a for loop each doc.page
-   * each page has item image, title, price, store logo
-   * items is an array of individual items
-   */
-
-
-  /*
-   # Render the image at full size
-   doc.image('images/test.jpeg', 100, 100)
-   .text('Full size', 100, 85)
-
-   # Fit the image within the dimensions
-   doc.image('images/test.jpeg', 350, 100, fit: [100, 100])
-   .rect(350, 100, 100, 100)
-   .stroke()
-   .text('Fit', 350, 85)
-
-   # Stretch the image
-   doc.image('images/test.jpeg', 350, 265, width: 200, height: 100)
-   .text('Stretch', 350, 250)
-
-
-   */
   doc
     .fontSize(25)
-    .text('Some text with an embedded font!', 100, 100)
+    .image('uniqlo.jpg')
+    .image('pdf3.jpg')
+    .text('MEN PRINTED SWEAT FULL ZIP HOODIE')
+    .fontSize(40)
+    .text('$19.90')
   doc.addPage()
     .fontSize(25)
     .text('Here is some vector graphics...', 100, 100)
@@ -591,11 +559,13 @@ app.get('/pdf', function(req, res) {
   doc.addPage()
     .fillColor("blue")
     .text('Here is a link!', 100, 100);
-  doc.write('Apparelist.pdf');
+  doc.write('apparelist.pdf');
+  res.download(__dirname + '/apparelist.pdf');
 
-  // download pdf
-  res.download(__dirname + '/Apparelist.pdf');
+
 });
+
+*/
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
