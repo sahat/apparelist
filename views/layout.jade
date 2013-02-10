@@ -14,6 +14,7 @@ head
   link(href='/stylesheets/font-awesome.min.css', rel='stylesheet')
   link(href='/stylesheets/google-bootstrap.css', rel='stylesheet')
   link(href='/stylesheets/toastr.css', rel='stylesheet')
+  link(href='http://fonts.googleapis.com/css?family=Marck+Script|Satisfy', rel='stylesheet', type='text/css')
   link(href='/stylesheets/style.css', rel='stylesheet')
   script(src='/javascripts/vendor/jquery.js')
   body
@@ -31,10 +32,6 @@ head
         .navbar-inner
           a.brand(href='/') Apparelist
           .navbar-form.pull-left
-            input.input-large#searchInput(type='text', placeholder='Search', name='search')
-            |&nbsp;
-            a#searchBtn.btn.btn-primary(href='/search?')
-              i.icon-search
           ul.nav.pull-right
             li
               a#bag.dropdown-toggle(href='#', data-toggle='dropdown')
@@ -63,26 +60,7 @@ head
                       | Print
 
       .container
-        ul.nav.nav-pills.stores
-          li.store
-            a(href='#') Express
-          li.store
-            a(href='#') H&M
-          li.store
-            a(href='#') GAP
-          li.store
-            a(href='#') ALDO
-          li.store
-            a(href='#') UNIQLO
-          li.store
-            a(href='#') Armani Exchange
-          li.store
-            a(href='#') Zara
-          li.store
-            a(href='#') A&F
-          li.store
-            a(href='#') Macys
-
+        
         block content
       #push
       #push

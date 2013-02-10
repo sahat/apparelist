@@ -1,14 +1,42 @@
 extends layout
 
 block content
+  
   .page-header
-    h1 Browse multiple stores...
+    h1 Browse your favorite stores from one site. 
   p.lead
     | Are you tired of checking multiple stores just to find what you are looking for?
     | Wouldn't it be great to check multiple stores at once? Then you have come to the right place!
+  
+  .pagination-centered  
+    input.input-xxlarge#searchInput(type='text', placeholder='Search', name='search')
+    |&nbsp;
+    a#searchBtn.btn.btn-xlarge.btn-primary(href='/search?')
+      i.icon-search
+
+  ul.nav.nav-pills.stores
+          li.store
+            a(href='#') Express
+          li.store
+            a(href='#') H&M
+          li.store
+            a(href='#') GAP
+          li.store
+            a(href='#') ALDO
+          li.store
+            a(href='#') UNIQLO
+          li.store
+            a(href='#') Armani Exchange
+          li.store
+            a(href='#') Zara
+          li.store
+            a(href='#') A&F
+          li.store
+            a(href='#') Macys
+
   .row
     .span6
-      .btn.btn-large.btn-block.btn-danger Women
+      .btn.btn-large.btn-block.btn-female.btn-large.category-header Women
       ul#women.nav.nav-list
         li
           a.category(href='/results') Dresses
@@ -52,9 +80,9 @@ block content
           a.category(href='/results') Sunglasses
 
     .span6
-      .btn.btn-large.btn-block.btn-info Men
+      .btn.btn-large.btn-block.btn-male.category-header Men
       ul#men.nav.nav-list
-        li.active
+        li
           a.category(href='/results') Shirts & Ties
         li
           a.category(href='/results') T-shirts
