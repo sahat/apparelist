@@ -92,6 +92,53 @@ exports.handm = {
   }
 };
 
+exports.handm = {
+  logo: '/images/hm.png',
+  name: 'Macys',
+  men: {
+    shirts_and_ties: 'http://www1.macys.com/shop/mens-clothing/mens-shirts?id=20626',
+    t_shirts: 'http://www1.macys.com/shop/mens-clothing/mens-t-shirts?id=30423',
+    polos: 'http://www1.macys.com/shop/mens-clothing/mens-polos?id=20640',
+    sweatshirts: 'http://www1.macys.com/shop/mens-clothing/hoodies-for-men?id=25995',
+    blazers: 'http://www1.macys.com/shop/mens-clothing/mens-blazers?id=16499',
+    jackets: 'http://www1.macys.com/shop/mens-clothing/mens-coats?id=3763',
+    sweaters: 'http://www1.macys.com/shop/mens-clothing/mens-sweaters?id=4286',
+    coats: 'http://www1.macys.com/shop/mens-clothing/mens-coats?id=3763',
+    shorts: 'http://www1.macys.com/shop/mens-clothing/mens-shorts?id=3310',
+    jeans: 'http://www1.macys.com/shop/mens-clothing/mens-jeans?id=11221',
+    underwear: 'http://www1.macys.com/shop/mens-clothing/mens-underwear?id=57',
+    swimwear: 'http://www1.macys.com/shop/mens-clothing/mens-swimwear?id=3291',
+    shoes: 'http://www1.macys.com/shop/mens-clothing/mens-shoes?id=65',
+    socks: 'http://www1.macys.com/shop/mens-clothing/mens-socks?id=18245',
+    watches: 'http://www1.macys.com/shop/jewelry-watches/mens-watches?id=57386',
+    belts: 'http://www1.macys.com/shop/mens-clothing/mens-belts?id=47665',
+    hats: 'http://www1.macys.com/shop/mens-clothing/hats-gloves-scarves?id=47657',
+    sunglasses: 'http://www1.macys.com/shop/mens-clothing/mens-sunglasses?id=58170'
+  },
+  women: {
+    dresses: '',
+    tops: '',
+    t_shirts: '',
+    sweaters: '',
+    jackets: '',
+    coats: '',
+    leggings: '',
+    shorts: '',
+    skirts: '',
+    handbags: '',
+    shoes: '',
+    jeans: '',
+    pants: '',
+    lingerie: '',
+    socks: '',
+    swimwear: '',
+    watches: '',
+    belts: '',
+    hats: '',
+    sunglasses: ''
+  }
+};
+
 exports.gap = {
   logo: '',
   name: 'GAP',
