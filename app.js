@@ -2,7 +2,6 @@
 // TODO: UNIQLO urls
 // TODO: API calls to HEARST (ad category)
 // TODO: AZURE
-// TODO: search on H&M
 // TODO: view bag button links
 // TODO: view bag share button (facebook api via Singly)
 // TODO: view bag detailed product page information (additional jsdom request) OPTIONAL

@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Sahat\Dropbox\Projects\fashionhack\TEMP_handm_if_else.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/bag.jade" afterPath="$PROJECT_DIR$/views/bag.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fashionhack.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360482611921" ignored="false" />
+    <file path="/Dummy.txt" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360485865259" ignored="false" />
     <file path="/app.js" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360485684702" ignored="false" />
     <file path="/test.html" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1359001510712" ignored="false" />
-    <file path="/layout.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360480827903" ignored="false" />
+    <file path="/layout.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360488291358" ignored="false" />
     <file path="/style.less" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360466826180" ignored="false" />
     <file path="/a.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294188696" ignored="false" />
     <file path="/index.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360295330895" ignored="false" />
@@ -31,7 +32,7 @@
     <file path="/a.html" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294183493" ignored="false" />
     <file path="/a.less" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294193418" ignored="false" />
     <file path="/a.xml" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360294380610" ignored="false" />
-    <file path="/bag.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360480056448" ignored="false" />
+    <file path="/bag.jade" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360488836230" ignored="false" />
     <file path="/style.css" changelist="f479003e-86ca-4e5a-a9f2-4e73bbe2610c" time="1360426059737" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,10 +92,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="368" column="94" selection-start="11296" selection-end="11296" vertical-scroll-proportion="12.777778">
+            <state line="8" column="87" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -114,16 +115,16 @@
       <file leaf-file-name="results.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/results.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="38" selection-start="2259" selection-end="2259" vertical-scroll-proportion="-18.92">
+            <state line="71" column="38" selection-start="2259" selection-end="2259" vertical-scroll-proportion="-12.68">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bag.jade" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bag.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/bag.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="29" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0">
+            <state line="18" column="16" selection-start="412" selection-end="412" vertical-scroll-proportion="0.3402778">
               <folding />
             </state>
           </provider>
@@ -132,7 +133,7 @@
       <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="47" selection-start="3180" selection-end="3180" vertical-scroll-proportion="0.0">
+            <state line="26" column="45" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,10 +193,10 @@
         <option value="$PROJECT_DIR$/public/stylesheets/style.less" />
         <option value="$PROJECT_DIR$/stores.js" />
         <option value="$PROJECT_DIR$/views/results.jade" />
-        <option value="$PROJECT_DIR$/views/bag.jade" />
-        <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/TEMP_handm_if_else.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
+        <option value="$PROJECT_DIR$/views/bag.jade" />
       </list>
     </option>
   </component>
@@ -581,7 +582,11 @@
       <created>1360482617047</created>
       <updated>1360482617047</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added uniqlo and H&amp;M search">
+      <created>1360485869023</created>
+      <updated>1360485869023</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,7 +652,7 @@
     <option name="UPDATE_FILTER_SCOPE_NAME" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pdf" />
+    <option name="LAST_COMMIT_MESSAGE" value="added uniqlo and H&amp;M search" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -673,6 +678,7 @@
     <MESSAGE value="added todo" />
     <MESSAGE value="added store images" />
     <MESSAGE value="added pdf" />
+    <MESSAGE value="added uniqlo and H&amp;M search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -740,30 +746,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="47" selection-start="3180" selection-end="3180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="51" selection-start="1400" selection-end="1400" vertical-scroll-proportion="-20.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/results.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="38" selection-start="2259" selection-end="2259" vertical-scroll-proportion="-18.92">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/bag.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="29" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -777,10 +762,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="368" column="94" selection-start="11296" selection-end="11296" vertical-scroll-proportion="12.777778">
+        <state line="8" column="87" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="45" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/results.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="38" selection-start="2259" selection-end="2259" vertical-scroll-proportion="-12.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/bag.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="16" selection-start="412" selection-end="412" vertical-scroll-proportion="0.3402778">
+          <folding />
         </state>
       </provider>
     </entry>

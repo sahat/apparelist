@@ -15,19 +15,17 @@ block content
               img.img-polaroid(src='#{item.image}')
             td
               img.store-logo-big(src='#{item.logo}')
-              .lead #{item.name}
+              .lead
+                a(href='#{item.url}') #{item.name}
             td
               .lead #{item.price}
             td
               button.btn.btn-mini.btn-danger(id='item-#{item.id}')
                 i.icon-trash
                 |  Remove
-              button.btn.btn-mini.btn-success
-                i.icon-shopping-cart
-                |  Buy
-              button.btn.btn-mini.btn-warning
-                i.icon-share
-                |  Share
+              p
+                .fb-like(data-href='#{item.url}', data-send='false', data-layout='button_count', data-width='450', data-show-faces='true')
+                .g-plusone(data-size='medium', data-href='#{item.url}')
           script(type='text/javascript')
             $('#item-#{item.id}').click(function() {
               $.ajax({
@@ -41,3 +39,9 @@ block content
               toastr.error('An item has been removed from your bag.');
               $('#row-#{item.id}').remove();
             });
+          script(type='text/javascript')
+            (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
