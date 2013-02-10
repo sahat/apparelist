@@ -1,3 +1,14 @@
+// TODO: Save to PDF: http://pdfkit.org/
+// TODO: UNIQLO urls
+// TODO: API calls to HEARST (ad category)
+// TODO: AZURE
+// TODO: search on H&M
+// TODO: view bag button links
+// TODO: view bag share button (facebook api via Singly)
+// TODO: view bag detailed product page information (additional jsdom request) OPTIONAL
+// TODO: UI touchups + pen/paper UI brainstorm
+
+
 var express = require('express');
 var http = require('http');
 var path = require('path');
@@ -6,6 +17,8 @@ var jsdom = require('jsdom');
 var async = require('async');
 var _ = require('underscore');
 var _s = require('underscore.string');
+var cheerio = require('cheerio');
+
 
 var stores = require('./stores');
 
@@ -172,70 +185,33 @@ app.get('/results', function(req, res) {
         callback(null, []);
       }
     },
-    function gap(callback) {
-      if (_.contains(store_array, 'gap  ')) {
+    function uniqlo(callback) {
+      if (_.contains(store_array, 'uniqlo')) {
         jsdom.env({
-          html: stores.gap[type][category],
+          html: 'http://www.uniqlo.com/us/mens-clothing/mens-tops/mens-sweatshirts-and-fleece',
           scripts: ["http://code.jquery.com/jquery.js"],
           done: function (errors, window) {
             var $ = window.$;
             var items = [];
-            $('.brand1.productCatItem').each(function(index, productElement) {
-              console.log('w');
-              /*
+
+            console.log('i am in uniqlo ')
+
+            $('.productWrapper').each(function(index, productElement) {
+              console.log('inside loop');
+
               var product = {
-                id: 'gap_' + index,
-                url: 'http://www.gap.com' + $('.productItemName', productElement).attr('href'),
-                name: $('li.cat-thu-name a', productElement).text().trim(),
-                price: $('ul li strong', productElement).text(),
-                image: $('.cat-thu-p-ima', productElement).attr('src'),
+                id: 'uniqlo' + index,
+                url: 'http://www.uniqlo.com' + $('.titleWrapper a', productElement).attr('href'),
+                name: $('.titleWrapper a span', productElement).text(),
+                price: $('.price', productElement).text().trim(),
+                image: $('.productIMG a img', productElement).attr('src'),
                 colors: [],
-                store: { logo: stores.express.logo, name: stores.express.name }
+                store: { logo: stores.uniqlo.logo, name: stores.uniqlo.name }
               };
 
-              $('.cat-cat-more-colors div img', productElement).each(function(index, colorElement) {
-                product.colors.push({name: $(colorElement).attr('alt'), imageUrl: $(colorElement).attr('src')});
-              });
+              console.log()
+              console.log(product);
               items.push(product);
-               */
-              i=0
-              console.log(i++)
-            });
-            callback(null, items);
-          }
-        });
-      } else {
-        callback(null, []);
-      }
-    },
-    function armani_exchange(callback) {
-      if (_.contains(store_array, 'armani_exchange  ')) {
-        jsdom.env({
-          html: stores.gap[type][category],
-          scripts: ["http://code.jquery.com/jquery.js"],
-          done: function (errors, window) {
-            var $ = window.$;
-            var items = [];
-            $('.brand1.productCatItem').each(function(index, productElement) {
-              console.log('w');
-              /*
-               var product = {
-               id: 'gap_' + index,
-               url: 'http://www.gap.com' + $('.productItemName', productElement).attr('href'),
-               name: $('li.cat-thu-name a', productElement).text().trim(),
-               price: $('ul li strong', productElement).text(),
-               image: $('.cat-thu-p-ima', productElement).attr('src'),
-               colors: [],
-               store: { logo: stores.express.logo, name: stores.express.name }
-               };
-
-               $('.cat-cat-more-colors div img', productElement).each(function(index, colorElement) {
-               product.colors.push({name: $(colorElement).attr('alt'), imageUrl: $(colorElement).attr('src')});
-               });
-               items.push(product);
-               */
-              i=0
-              console.log(i++)
             });
             callback(null, items);
           }
@@ -259,8 +235,8 @@ app.get('/results', function(req, res) {
                 var product = {
                   id: 'handm_' + index,
                   url: $('span.details', productElement).parent().attr('href'),
-                  name: $('span.details', productElement).text(),
-                  price: $('span.price', productElement).text(),
+                  name: $('span.details', productElement).text().trim().replace(/\s{2,}/g, ' '),
+                  price: $('span.price', productElement).text().trim(),
                   image: $('div.image img:nth-child(2)', productElement).attr('src'),
                   colors: [],
                   store: { logo: stores.handm.logo, name: stores.handm.name }
@@ -341,7 +317,8 @@ app.get('/search', function(req, res) {
     function express(callback) {
       if (_.contains(store_array, 'express')) {
         console.log('found express');
-        var search_url = 'http://www.express.com/catalog/search.cmd?form_state=searchForm&x=0&y=0&keyword=' + search_query;
+        var search_url ='http://www.express.com/catalog/search_results.jsp?keyword='+search_query+'&form_state=searchForm&y=0&x=0&Mft='+search_query+'&Mpper=74&Mpos=1&Mpg=SEARCH%2BNAV&Mrsaa=*&Mrsavf=SIZE_NAME&Mrsavf=category&Mrsavf=Color&viewall=1'
+        //var search_url = 'http://www.express.com/catalog/search.cmd?form_state=searchForm&x=0&y=0&keyword=' + search_query;
         jsdom.env({
           html: search_url,
           scripts: ["http://code.jquery.com/jquery.js"],
@@ -350,9 +327,6 @@ app.get('/search', function(req, res) {
             var items = [];
 
             $('div.cat-luc-result-item').each(function(index, productElement) {
-              console.log('inside loop');
-
-
               var product = {
                 id: 'express_' + index,
                 url: 'http://www.express.com' + $('div.cat-luc-result-item ul li:nth-child(3)', productElement).attr('href'),

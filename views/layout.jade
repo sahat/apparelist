@@ -26,31 +26,6 @@ head
             |&nbsp;
             a#searchBtn.btn.btn-primary(href='/search?')
               i.icon-search
-          ul.nav.pull-left
-            li
-              a.dropdown-toggle(href='#', data-toggle='dropdown')
-                i.icon-shopping-cart
-                |  Stores
-                i.icon-angle-down
-                ul.dropdown-menu.stores
-                  li.store
-                    a(href='#') Express
-                  li.store
-                    a(href='#') H&M
-                  li.store
-                    a(href='#') GAP
-                  li.store
-                    a(href='#') ALDO
-                  li.store
-                    a(href='#') UNIQLO
-                  li.store
-                    a(href='#') Armani Exchange
-                  li.store
-                    a(href='#') Zara
-                  li.store
-                    a(href='#') A&F
-                  li.store
-                    a(href='#') Macys
           ul.nav.pull-right
             li
               a#bag.dropdown-toggle(href='#', data-toggle='dropdown')
@@ -77,7 +52,28 @@ head
                     a#print(href='#')
                       i.icon-print
                       | Print
+
       .container
+        ul.nav.nav-pills.stores
+          li.store
+            a(href='#') Express
+          li.store
+            a(href='#') H&M
+          li.store
+            a(href='#') GAP
+          li.store
+            a(href='#') ALDO
+          li.store
+            a(href='#') UNIQLO
+          li.store
+            a(href='#') Armani Exchange
+          li.store
+            a(href='#') Zara
+          li.store
+            a(href='#') A&F
+          li.store
+            a(href='#') Macys
+
         block content
       #push
       #push

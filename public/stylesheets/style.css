@@ -69,6 +69,9 @@ code {
 .store-logo {
   max-height: 20px;
 }
+.store-logo-big {
+  max-height: 75px;
+}
 .bag-items {
   background: #fff;
 }

@@ -92,9 +92,9 @@ exports.handm = {
   }
 };
 
-exports.handm = {
-  logo: '/images/hm.png',
-  name: 'Macys',
+exports.macys = {
+  logo: '/images/macys.jpg',
+  name: 'Macy\'s',
   men: {
     shirts_and_ties: 'http://www1.macys.com/shop/mens-clothing/mens-shirts?id=20626',
     t_shirts: 'http://www1.macys.com/shop/mens-clothing/mens-t-shirts?id=30423',
@@ -194,6 +194,54 @@ exports.armani_exchange = {
     t_shirts: '',
     polos: '',
     sweatshirts: '',
+    blazers: '',
+    jackets: '',
+    sweaters: '',
+    coats: '',
+    shorts: '',
+    jeans: '',
+    underwear: '',
+    swimwear: '',
+    shoes: '',
+    socks: '',
+    watches: '',
+    belts: '',
+    hats: '',
+    sunglasses: ''
+  },
+  women: {
+    dresses: '',
+    tops: '',
+    t_shirts: '',
+    sweaters: '',
+    jackets: '',
+    coats: '',
+    leggings: '',
+    shorts: '',
+    skirts: '',
+    handbags: '',
+    shoes: '',
+    jeans: '',
+    pants: '',
+    lingerie: '',
+    socks: '',
+    swimwear: '',
+    watches: '',
+    belts: '',
+    hats: '',
+    sunglasses: ''
+  }
+};
+
+
+exports.uniqlo = {
+  logo: '/images/uniqlo.jpeg',
+  name: 'UNIQLO',
+  men: {
+    shirts_and_ties: '',
+    t_shirts: '',
+    polos: '',
+    sweatshirts: 'http://www.uniqlo.com/us/mens-clothing/mens-tops/mens-sweatshirts-and-fleece',
     blazers: '',
     jackets: '',
     sweaters: '',
