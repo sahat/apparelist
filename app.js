@@ -7,7 +7,6 @@ var jsdom = require('jsdom');
 var async = require('async');
 var _ = require('underscore');
 var _s = require('underscore.string');
-var PDFDocument = require('pdfkit');
 var fs = require('fs');
 var stores = require('./stores');
 

@@ -2,7 +2,7 @@ exports.express = {
   logo: '/images/express.jpg',
   name: 'Express',
   men: {
-    shirts_and_ties: 'http://www.express.com/shirts-ties-49/control/show/80/index.cat',
+    shirts_and_ties: 'http://www.express.com/clothing/Men/Shirts+-+Ties/cat/cat1007?pageNumber=1&viewAll=true',
     t_shirts: 'http://www.express.com/tees-henleys-844/control/show/80/index.cat',
     polos: 'http://www.express.com/polos-690/control/show/80/index.cat',
     sweatshirts: 'http://www.express.com/hoodies-sweatshirts-836/control/show/80/index.cat',

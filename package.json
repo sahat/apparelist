@@ -6,7 +6,12 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": "3.0.6",
+    "express": "3.x",
+    "jsdom": "*",
+    "async": "*",
+    "underscore": "*",
+    "underscore.string": "*",
+    "request": "*",
     "jade": "*",
     "less-middleware": "*"
   }
