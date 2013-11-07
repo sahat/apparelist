@@ -1,3 +1,4 @@
+var cheerio = require('cheerio');
 var url = require('url');
 var express = require('express');
 var http = require('http');
@@ -15,7 +16,7 @@ var app = express();
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
+  app.set('view engine', 'hbs');
   app.locals.pretty = true;
   app.use(express.favicon());
   app.use(express.logger('dev'));

@@ -4,6 +4,7 @@
   "dependencies": {
     "express": "3.x",
     "jsdom": "*",
+    "cheerio": "*",
     "async": "*",
     "underscore": "*",
     "underscore.string": "*",
