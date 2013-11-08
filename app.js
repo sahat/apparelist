@@ -16,7 +16,7 @@ var app = express();
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
-  app.set('view engine', 'hbs');
+  app.set('view engine', 'jade');
   app.locals.pretty = true;
   app.use(express.favicon());
   app.use(express.logger('dev'));
@@ -51,8 +51,6 @@ app.get('/', function(req, res) {
  * POST /bag
  */
 app.post('/bag', function(req, res) {
-
-
   var item = {
     id: req.body.id,
     url: req.body.url,
@@ -60,7 +58,7 @@ app.post('/bag', function(req, res) {
     price: req.body.price,
     name: req.body.name,
     logo: req.body.logo
-  }
+  };
 
   if (!req.session.bag) {
     req.session.bag = [];
@@ -115,7 +113,7 @@ app.get('/results', function(req, res) {
   // when a single store is selected, it is passed a string
   if (typeof store_array === 'string') {
     var temp = store_array;
-    var store_array = [];
+    store_array = [];
     store_array.push(temp);
   }
 
@@ -129,26 +127,19 @@ app.get('/results', function(req, res) {
           done: function (errors, window) {
             var $ = window.$;
             var items = [];
+            var container = $('div.cat-cat-item').length ? 'div.cat-cat-item' : 'div.cat-thu-product';
 
-
-            if($('div.cat-cat-item').length > 0) {
-              var container = 'div.cat-cat-item';
-            } else {
-              var container = 'div.cat-thu-product';
-            }
-
-            console.log(container);
             $(container).each(function(index, productElement) {
-              console.log('inside loop');
 
+              var name, img = '';
               if($('div.cat-cat-item').length > 0) {
-                var img = '.cat-cat-prod-img';
-                var name = 'li.cat-cat-prod-name a';
+                img = '.cat-cat-prod-img';
+                name = 'li.cat-cat-prod-name a';
 
               } else {
                 console.log('cat-thu-p-ima');
-                var img = '.cat-thu-p-ima';
-                var name = 'li.cat-thu-name a';
+                img = '.cat-thu-p-ima';
+                name = 'li.cat-thu-name a';
 
               }
 
@@ -184,8 +175,6 @@ app.get('/results', function(req, res) {
             var $ = window.$;
             var items = [];
 
-            console.log('i am in uniqlo ')
-
             $('.productWrapper').each(function(index, productElement) {
               console.log('inside loop');
 
@@ -199,8 +188,6 @@ app.get('/results', function(req, res) {
                 store: { logo: stores.uniqlo.logo, name: stores.uniqlo.name }
               };
 
-              console.log()
-              console.log(product);
               items.push(product);
             });
             callback(null, items);
@@ -219,9 +206,7 @@ app.get('/results', function(req, res) {
             var $ = window.$;
             var items = [];
             $('#list-products > li').each(function(index, productElement) {
-              console.log(index);
               if (index > 1) {
-                console.log(index, 'inside if');
                 var product = {
                   id: 'handm_' + index,
                   url: $('span.details', productElement).parent().attr('href'),
@@ -245,14 +230,15 @@ app.get('/results', function(req, res) {
       }
     },
     function hearst(callback) {
+      var url = '';
       if (category) {
-        var parsedCategory = category
+        var parsedCategory = category;
         parsedCategory = parsedCategory.replace(/[^-a-zA-Z0-9,&\s]+/ig, '');
         parsedCategory = parsedCategory.replace(/-/gi, '+');
         parsedCategory = parsedCategory.replace(/\s/gi, '+');
         parsedCategory = parsedCategory.replace(/&/gi, '+');
         parsedCategory = parsedCategory.toLowerCase();
-        var url = 'http://hearst.api.mashery.com/Article/search?keywords='+parsedCategory+'&_pretty=0&shape=full&start=0&limit=3&sort=publish_date%2Cdesc&total=0&api_key=nsuww68vv2b2yycg88bqttc3';
+        url = 'http://hearst.api.mashery.com/Article/search?keywords='+parsedCategory+'&_pretty=0&shape=full&start=0&limit=3&sort=publish_date%2Cdesc&total=0&api_key=nsuww68vv2b2yycg88bqttc3';
       } else {
         var parsedSearchQuery = search;
         parsedSearchQuery = parsedSearchQuery.replace(/[^-a-zA-Z0-9,&\s]+/ig, '');
@@ -260,11 +246,10 @@ app.get('/results', function(req, res) {
         parsedSearchQuery = parsedSearchQuery.replace(/\s/gi, '+');
         parsedSearchQuery = parsedSearchQuery.replace(/&/gi, '+');
         parsedSearchQuery = parsedSearchQuery.toLowerCase();
-        var url = 'http://hearst.api.mashery.com/Article/search?keywords='+parsedSearchQuery+'&_pretty=0&shape=full&start=0&limit=3&sort=publish_date%2Cdesc&total=0&api_key=nsuww68vv2b2yycg88bqttc3';
+        url = 'http://hearst.api.mashery.com/Article/search?keywords='+parsedSearchQuery+'&_pretty=0&shape=full&start=0&limit=3&sort=publish_date%2Cdesc&total=0&api_key=nsuww68vv2b2yycg88bqttc3';
 
       }
-      request.get({ url:url, json:true }, function (e, r, body) {
-        console.log(body);
+      request.get({ url: url, json:true }, function (e, r, body) {
         callback(null, body);
       });
     }
@@ -273,14 +258,13 @@ app.get('/results', function(req, res) {
     if (err) {
       res.send(500, err);
     } else {
-      console.log(results);
       var hearst = results.pop();
       var items = _.flatten(results, true);
     }
 
     var byProperty = function(prop) {
       return function(a,b) {
-        if (typeof a[prop] == "number") {
+        if (typeof a[prop] === "number") {
           return (a[prop] - b[prop]);
         } else {
           return ((a[prop] < b[prop]) ? -1 : ((a[prop] > b[prop]) ? 1 : 0));
@@ -289,7 +273,7 @@ app.get('/results', function(req, res) {
     };
     var byPropertyReverse = function(prop) {
       return function(a,b) {
-        if (typeof a[prop] == "number") {
+        if (typeof a[prop] === "number") {
           return (b[prop] - a[prop]);
         } else {
           return ((a[prop] > b[prop]) ? -1 : ((a[prop] < b[prop]) ? 1 : 0));
@@ -297,10 +281,10 @@ app.get('/results', function(req, res) {
       };
     };
 
-    if (sortPrice == 'asc') {
+    if (sortPrice === 'asc') {
       items.sort(byProperty('price'));
     }
-    if (sortPrice == 'desc') {
+    if (sortPrice === 'desc') {
       items.sort(byPropertyReverse('price'));
     }
 
